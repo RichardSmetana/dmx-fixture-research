@@ -13,6 +13,9 @@ Desktop.ini
 *.local.md
 private/
 
+# Staging data for later use (not published)
+raw/
+
 # Large raw media (keep curated photos in fixtures/*/photos/)
 *.raw
 *.nef

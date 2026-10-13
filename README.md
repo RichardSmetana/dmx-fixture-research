@@ -2,7 +2,9 @@
 
 Reverse engineering, DMX channel mappings, documentation and fixture profiles for vintage and unidentified stage lighting equipment.
 
-Öffentliche technische Dokumentation und DMX-Fixture-Datenbank für ältere, unbekannte oder schlecht dokumentierte Scheinwerfer. Ziel ist, Messungen und Kanalbelegungen so festzuhalten, dass andere Lichttechniker die Geräte ohne erneute Recherche nutzen können.
+Technische Dokumentation und DMX-Fixture-Datenbank für ältere, unbekannte oder schlecht dokumentierte Scheinwerfer. Ziel ist, Messungen und Kanalbelegungen so festzuhalten, dass andere Lichttechniker die Geräte ohne erneute Recherche nutzen können.
+
+> **Status:** privat — inhaltlich auf eine spätere öffentliche Freigabe vorbereitet. Der Ordner `raw/` bleibt lokal und wird nicht veröffentlicht.
 
 ## Geräteverzeichnis
 
@@ -67,8 +69,22 @@ Offene Einzelfragen können als GitHub Issues geführt werden (z. B. „CH7: E
 | `.json` | Open Fixture Library | Optional |
 | `.pdf` | Eigene Anleitungen und Datenblätter | Optional |
 
+## Veröffentlichung (Checkliste)
+
+Vor dem Umschalten auf **public**:
+
+- [ ] Mindestens ein Gerät mit verifizierter Kanalbelegung dokumentiert
+- [ ] Eigene Fotos in `fixtures/*/photos/` (keine fremden Manuals ohne Erlaubnis)
+- [ ] Keine privaten Pfade, Namen oder Internas in Markdown/Issues
+- [ ] `raw/` enthält nichts Commitbares (weiterhin in `.gitignore`)
+- [ ] README-Geräteverzeichnis aktualisiert (echte Namen, Modi, Stand)
+- [ ] Lizenzhinweis GPL-3.0 und Urheberangaben geprüft
+- [ ] Optional: QLC+-Profile (`.qxf`) getestet und abgelegt
+
+Danach auf GitHub: Repository → **Settings** → Visibility → **Public** (oder `gh repo edit --visibility public`).
+
 ## Lizenz und Beiträge
 
-- Dokumentation, Fotos und Testergebnisse in diesem Repository: [CC BY 4.0](LICENSE).
+- Inhalt dieses Repositorys: [GNU General Public License v3.0](LICENSE) (GPL-3.0).
 - Fremde Handbücher nur mit Erlaubnis hochladen; sonst auf die Fundstelle verlinken.
-- Pull Requests und Issues für Korrekturen, neue Geräte und ungeklärte Kanäle sind willkommen.
+- Nach der öffentlichen Freigabe: Pull Requests und Issues für Korrekturen, neue Geräte und ungeklärte Kanäle willkommen.
