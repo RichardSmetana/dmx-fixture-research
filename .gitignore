@@ -1,0 +1,24 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local scratch / private notes
+*.local.md
+private/
+
+# Large raw media (keep curated photos in fixtures/*/photos/)
+*.raw
+*.nef
+*.cr2
+*.dng
+
+# Temporary exports
+*.tmp
+~$*
