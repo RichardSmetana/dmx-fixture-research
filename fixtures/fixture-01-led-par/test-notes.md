@@ -23,20 +23,20 @@ Der 7-Kanal-Modus ist am Gerät verifiziert. Die Strobe-Bereiche von CH9 im 12-K
 | | 7CH | CH7 | 132–189 | Puls / Fade hell nach dunkel | Verifiziert |
 | | 7CH | CH7 | 190–230 | Puls / Fade dunkel nach hell | Verifiziert |
 | | 7CH | CH7 | 231–255 | Offen / maximale Helligkeit | Verifiziert |
-| | 12CH | CH9 | 0–255, Bereiche wie [dmx-channels.md](dmx-channels.md) | Strobe / Puls / Zufalls-Strobe auf V2.20 | Verifiziert |
+| | 12CH | CH9 | 0–255, Bereiche wie [dmx-channels.md](dmx-channels.md) | Wertebereiche auf V2.20 geprüft. Pulsrichtung aus der Fixture-Datei | Grenzen verifiziert |
 
 ## Gesichert
 
 - Firmware am dokumentierten Gerät: V2.20.
 - 7-Kanal-Reihenfolge: Rot, Grün, Blau, Weiß, Amber, UV, Strobe.
 - Strobe-Bereiche auf CH7 wie in [dmx-channels.md](dmx-channels.md).
-- 12CH CH9: gemessene Wertebereiche; Pulsbeschreibungen aus der Fixture-Datei. Offen-Fenster zwischen den Effektbereichen.
-- Menü enthält unter anderem `Addr`, `Chnd` (7/12), `SLnd`, `CoLo` 1–38, `Soun` 1–6, `Cust` CC1–CC5, `Ver`.
+- 12CH CH9: gemessene Wertebereiche. Pulsrichtung aus der Fixture-Datei. Offen-Fenster zwischen den Effektbereichen.
 - Fotos: sieben Optiken in Anordnung 2–3–2, Bügel, 4-stellige Anzeige, Tasten von links MENU, DOWN, UP, ENTER.
 - Rückseite beschriftet mit DMX OUT, DMX IN, POWER OUT, POWER IN AC90-240V. Stabantenne vorhanden. Zeichen CE, WEEE, RoHS. Kein Hersteller- oder Modellname lesbar.
 
 ## Vermutet
 
+- Menüplan in der Anleitung (`Addr`, `Chnd`, `SLnd`, `CoLo` 1–38, `Soun` 1–6, `Cust` CC1–CC5, `Ver`). Nicht Punkt für Punkt am Display protokolliert.
 - 12CH-Reihenfolge RGBAWUV, dann Farbpresets, Master-Dimmer, Strobe, Zufallsfarbe, Auto-Farbe, Auto/Sound/Strobe.
 - Amber CH4 und Weiß CH5 nur in diesem Modus (gegenüber 7CH vertauscht).
 - Acht DMX-Farbbereiche auf CH7 statt der 32 Presets aus dem Rasha-HEX-V12-Manual. Die 38 Menüfarben sind davon unabhängig.
@@ -51,8 +51,8 @@ Der 7-Kanal-Modus ist am Gerät verifiziert. Die Strobe-Bereiche von CH9 im 12-K
 - Ob CH7 im 7CH-Modus bei 231–255 nur heller ist als bei 0–15.
 - Zuordnung der drei `Dinn`-Stufen zu Dimmerkurven.
 - Einzelverhalten von `Soun` 1–6, `FADE` 1–3, `Auto` 1–9, Sync und CliC.
-- Pairing des verbauten 2,4-GHz-Empfängers.
-- Ob das QLC+-Profil importiert und gegen das Gerät gefahren wurde.
+- Pairing des Wireless-Empfängers. Die Frequenz 2,4 GHz steht nicht auf dem Gehäuse, eine eigene Empfangs-LED ist nicht sichtbar.
+- Die Profil-Datei entspricht der installierten QLC+-Definition. Ein Live-Gegentest am Gerät steht aus.
 
 ## Unterschiede zwischen Exemplaren
 

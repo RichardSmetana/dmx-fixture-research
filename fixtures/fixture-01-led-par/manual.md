@@ -34,7 +34,7 @@ Bedienfeld und Funktionen ähneln dem Rasha Professional HEX V12 Wireless Flat P
 - Sieben LED-Optiken
 - RGBWAUV-Farbmischung
 - DMX mit 7 und 12 Kanälen
-- Integrierter 2,4-GHz-Wireless-DMX-Empfänger
+- Wireless-DMX-Empfänger mit Stabantenne (2,4 GHz laut Beschreibung)
 - DMX-Ein- und Ausgang, 3-poliger XLR
 - Master-Dimmer im 12CH-Modus
 - Strobe, Puls und Zufalls-Strobe
@@ -83,18 +83,26 @@ Solange das Typenschild dieses Geräts das nicht bestätigt, gilt **45 °C** als
 
 Auf der Rückseite steht **POWER IN AC90-240V**. Eine Netzfrequenz ist dort nicht aufgedruckt. Das Rasha-Referenzmanual nennt zusätzlich 50/60 Hz; das ist am Gerät nicht bestätigt.
 
-### 3.2 Netz
+### 3.2 Anschlussfeld
 
-Von links nach rechts auf der Anschlussseite, siehe [photos/rear-panel.jpg](photos/rear-panel.jpg):
+Von links nach rechts, siehe [photos/rear-panel.jpg](photos/rear-panel.jpg):
 
+- 4-stellige Anzeige und die Tasten MENU, DOWN, UP, ENTER
 - DMX OUT, 3-poliger XLR
 - DMX IN, 3-poliger XLR
-- POWER OUT, IEC, zum Weiterschleifen
+- POWER OUT, IEC
 - POWER IN, IEC, Aufdruck AC90-240V
+
+Die Stabantenne sitzt oberhalb der Buchsen. Eine eigene Wireless-LED ist auf der Rückseite nicht zu sehen.
+
+### 3.3 Netz
+
+- POWER IN, Aufdruck AC90-240V
+- POWER OUT zum Weiterschleifen weiterer Geräte
 
 Den zulässigen Strom von Steckverbindern und Leitungen nicht überschreiten. Der Sicherungswert ist auf den Fotos nicht lesbar.
 
-### 3.3 DMX
+### 3.4 DMX
 
 3-poliger XLR, auf dem Gerät beschriftet:
 
@@ -103,16 +111,16 @@ Den zulässigen Strom von Steckverbindern und Leitungen nicht überschreiten. De
 
 Die Geräte lassen sich in einer DMX-Kette verbinden.
 
-### 3.4 Wireless-DMX
+### 3.5 Wireless-DMX
 
-Empfänger: 2,4 GHz.
+Eine Stabantenne ist am Gerät vorhanden. Die Angabe 2,4 GHz stammt aus der Gerätebeschreibung und steht nicht auf dem Gehäuse.
 
 1. Gerät einschalten.
 2. DMX-Kanalmodus wählen.
 3. Startadresse setzen.
 4. Den passenden Wireless-DMX-Sender einschalten.
 5. Empfänger auf dieselbe Wireless-Gruppe bzw. dieselbe ID wie der Sender stellen.
-6. Die Empfangsanzeige prüfen.
+6. Das Display prüfen. Eine separate Empfangs-LED ist nicht vorhanden.
 
 Wireless ersetzt nur das DMX-Kabel. Netzversorgung bleibt nötig.
 
@@ -270,7 +278,7 @@ Modusnamen im QLC+-Profil:
 
 | Modus | Name in QLC+ | Stand |
 | --- | --- | --- |
-| 7CH | 7 Channel  - probable Rasha/OEM | Kanalbelegung am Gerät verifiziert |
+| 7CH | 7 Channel  - probable Rasha/OEM | Kanalbelegung am Gerät verifiziert. Der Name enthält zwei Leerzeichen vor dem Gedankenstrich. |
 | 12CH | 12 Channel - probable Rasha/OEM | CH9 auf V2.20 geprüft, übrige Kanäle aus der Fixture-Definition |
 
 ### 5.1 Sieben Kanäle (7CH)
@@ -520,7 +528,9 @@ Kanalbelegung, Werte und Effektbeschreibungen folgen dieser Definition. Änderun
 - **12CH, CH9:** Strobe-Bereiche auf Firmware V2.20 geprüft.
 - Farbpresets, Automatik und die übrigen 12CH-Kanäle stehen aus der Fixture-Definition. Detailliertere Messungen stehen noch aus.
 - Abmessungen, Gewicht, Leistungsaufnahme, Linsentyp und Abstrahlwinkel stammen aus dem Profil und sind nicht unabhängig geprüft.
-- Am Gehäuse sichtbar: sieben Optiken, Bügel, DMX IN/OUT, POWER IN AC90-240V, POWER OUT, Stabantenne, Tasten MENU DOWN UP ENTER, Zeichen CE, WEEE und RoHS. Herstellername und Modell stehen auf den Fotos nicht.
+- Am Gehäuse sichtbar: sieben Optiken, Bügel, DMX OUT/IN, POWER IN AC90-240V, POWER OUT, Stabantenne, Tasten MENU DOWN UP ENTER, Zeichen CE, WEEE und RoHS. Herstellername, Modell und Netzfrequenz stehen auf den Fotos nicht. Eine eigene Wireless-LED fehlt.
+- Der Menüplan ist beschrieben und noch nicht Punkt für Punkt am Display protokolliert.
+- Die DMX-Bereiche in beiden Modi decken jeweils 0–255 ohne Lücke ab. Das entspricht der QXF-Datei.
 
 ---
 

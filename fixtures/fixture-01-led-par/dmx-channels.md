@@ -9,6 +9,8 @@ Quelle: QLC+-Profil [`profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf`](profile
 | Modus | Kanäle | Name in QLC+ | Menü `Chnd` | Stand |
 | --- | --- | --- | --- | --- |
 | 7 Channel | 7 | 7 Channel  - probable Rasha/OEM | 7 | Verifiziert |
+
+Der 7CH-Modusname enthält zwei Leerzeichen zwischen „Channel“ und dem Gedankenstrich, genau so wie in der QXF-Datei.
 | 12 Channel | 12 | 12 Channel - probable Rasha/OEM | 12 | CH9 verifiziert (V2.20), übrige Kanäle vermutet |
 
 Weiß und Amber sitzen in den beiden Modi an unterschiedlichen Kanälen:
@@ -55,7 +57,7 @@ CH1 = 255, CH2–CH6 = 0, CH7 = 0 (Offen-Bereich).
 
 ## Modus: 12 Channel
 
-CH9 ist auf Firmware V2.20 geprüft. Farbkanäle, Presets, Master-Dimmer und CH10–CH12 stehen aus der Fixture-Definition.
+Die Wertebereiche von CH9 sind auf Firmware V2.20 geprüft. Die Pulsrichtung in den Bereichen 140–181 und 190–231 folgt der Fixture-Datei. Farbkanäle, Presets, Master-Dimmer und CH10–CH12 stehen aus der Fixture-Definition. Die DMX-Bereiche jedes Kanals decken 0–255 lückenlos ab.
 
 | Kanal | DMX-Wert | Funktion | Status |
 | --- | --- | --- | --- |
@@ -79,9 +81,9 @@ CH9 ist auf Firmware V2.20 geprüft. Farbkanäle, Presets, Master-Dimmer und CH1
 | CH9 | 8–15 | Offen | Verifiziert |
 | CH9 | 16–131 | Strobe, langsam bis schnell | Verifiziert |
 | CH9 | 132–139 | Offen | Verifiziert |
-| CH9 | 140–181 | Puls: langsam zu, schnell auf | Verifiziert |
+| CH9 | 140–181 | Puls: langsam zu, schnell auf | Grenzen verifiziert, Richtung aus Profil |
 | CH9 | 182–189 | Offen | Verifiziert |
-| CH9 | 190–231 | Puls: langsam auf, schnell zu | Verifiziert |
+| CH9 | 190–231 | Puls: langsam auf, schnell zu | Grenzen verifiziert, Richtung aus Profil |
 | CH9 | 232–239 | Offen | Verifiziert |
 | CH9 | 240–247 | Zufalls-Strobe | Verifiziert |
 | CH9 | 248–255 | Offen | Verifiziert |

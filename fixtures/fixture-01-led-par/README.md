@@ -15,9 +15,9 @@
 
 ## Kurzbeschreibung
 
-Kompakter RGBWAUV-LED-PAR mit sieben Optiken, DMX512 (3-poliger XLR, Ein und Aus), 2,4-GHz-Wireless-DMX, Standalone, Sound und Master/Slave. Bedienfeld und Menü ähneln dem Rasha Professional HEX V12 Wireless Flat PAR. Der Hardware-Hersteller ist nicht nachgewiesen.
+Kompakter RGBWAUV-LED-PAR mit sieben Optiken, DMX512 (3-poliger XLR, Ein und Aus), Wireless-DMX über Stabantenne, Standalone, Sound und Master/Slave. Die Frequenz 2,4 GHz steht in der Gerätebeschreibung, nicht auf dem Gehäuse. Bedienfeld und Menü ähneln dem Rasha Professional HEX V12 Wireless Flat PAR. Der Hardware-Hersteller ist nicht nachgewiesen.
 
-Der **7-Kanal-Modus** ist am Gerät verifiziert: Rot, Grün, Blau, Weiß, Amber, UV, Strobe. Im **12-Kanal-Modus** liegen Amber und Weiß vertauscht (Amber CH4, Weiß CH5). Die Strobe-Bereiche auf CH9 sind auf Firmware V2.20 geprüft. Die übrigen 12CH-Kanäle folgen der Fixture-Definition und sind noch nicht vollständig nachgemessen.
+Der **7-Kanal-Modus** ist am Gerät verifiziert: Rot, Grün, Blau, Weiß, Amber, UV, Strobe. Im **12-Kanal-Profil** liegen Amber und Weiß vertauscht (Amber CH4, Weiß CH5); diese Reihenfolge ist noch nicht vollständig nachgemessen. Die Wertebereiche auf CH9 sind auf Firmware V2.20 geprüft, die Pulsrichtung stammt aus der Fixture-Datei. Die übrigen 12CH-Kanäle folgen der Fixture-Definition.
 
 Profil: [`profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf`](profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf) (QLC+ 5.2.2). Das Feld `Manufacturer` darin ist `dmx-fixture-research` und bezeichnet dieses Projekt, nicht den Gerätehersteller. Der 7CH-Modus heißt im Profil `7 Channel  - probable Rasha/OEM`; die Kanalbelegung selbst ist verifiziert.
 
@@ -45,7 +45,7 @@ Profilwerte sind keine Labormessung. Lumen und Farbtemperatur im QLC+-Profil ste
 | Versorgungsspannung | AC 90–240 V, Aufdruck „POWER IN“. Frequenz nicht aufgedruckt | Foto Rückseite |
 | Leistungsaufnahme | 90 W | QLC+-Profil |
 | Umgebungstemperatur | konservativ max. 45 °C, bis das Schild bestätigt ist | Rasha-Doku nennt 45 °C und 50 °C |
-| DMX In/Out | 3-poliger XLR, Beschriftung DMX OUT und DMX IN; Stabantenne für Wireless-DMX | Foto Rückseite |
+| DMX In/Out | 3-poliger XLR, von links DMX OUT dann DMX IN. Stabantenne vorhanden, keine eigene Wireless-LED sichtbar | Foto Rückseite |
 | Netz Ein/Aus | IEC-Eingang „POWER IN“ und IEC-Ausgang „POWER OUT“. Sicherungswert nicht lesbar | Foto Rückseite |
 | Display / Menü | 4-stellige 7-Segment-Anzeige. Tasten von links: MENU, DOWN, UP, ENTER. Firmware V2.20 | Foto Rückseite / Anleitung Rev. 1.1 |
 | Vermutete baugleiche Modelle | Rasha Professional HEX V12 Wireless Flat PAR | ähnliches Menü; 32 DMX-Farbpresets der Rasha-Doku werden nicht verwendet |

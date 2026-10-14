@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+  <Creator>
+    <Name>Q Light Controller Plus</Name>
+    <Version>5.2.1</Version>
+    <Author>dmx-fixture-research</Author>
+ </Creator>
+  <Manufacturer>dmx-fixture-research</Manufacturer>
+  <Model>Involight LEDMH100</Model>
+  <Type>Moving Head</Type>
+  <Channel Name="Control Mode / Program Select">
+    <Group Byte="0">Effect</Group>
+    <Capability Min="0" Max="24">RGB manual control</Capability>
+    <Capability Min="25" Max="49">Built-in program 1</Capability>
+    <Capability Min="50" Max="74">Built-in program 2</Capability>
+    <Capability Min="75" Max="99">Built-in program 3</Capability>
+    <Capability Min="100" Max="124">Built-in program 4</Capability>
+    <Capability Min="125" Max="149">Built-in program 5</Capability>
+    <Capability Min="150" Max="174">Built-in program 6</Capability>
+    <Capability Min="175" Max="199">Built-in program 7</Capability>
+    <Capability Min="200" Max="224">Built-in program 8</Capability>
+    <Capability Min="225" Max="255">Sound-active program</Capability>
+  </Channel>
+  <Channel Name="Red" Preset="IntensityRed"/>
+  <Channel Name="Green" Preset="IntensityGreen"/>
+  <Channel Name="Blue" Preset="IntensityBlue"/>
+  <Channel Name="Strobe / Auto Speed">
+    <Group Byte="0">Shutter</Group>
+    <Capability Min="0" Max="15">RGB: no strobe / Program: fastest auto speed</Capability>
+    <Capability Min="16" Max="255" Preset="StrobeFastToSlow">RGB: strobe fast to slow / Program: auto speed fast to slow</Capability>
+  </Channel>
+  <Channel Name="RGB Dimmer (inverted: 0=full, 255=blackout)">
+    <Group Byte="0">Intensity</Group>
+    <Capability Min="0" Max="255">Inverted RGB dimmer: 0 = full brightness, 255 = blackout</Capability>
+  </Channel>
+  <Channel Name="Pan">
+    <Group Byte="0">Pan</Group>
+    <Capability Min="0" Max="255">PAN coarse / MSB, 0-540 degrees</Capability>
+  </Channel>
+  <Channel Name="Tilt">
+    <Group Byte="0">Tilt</Group>
+    <Capability Min="0" Max="255">TILT coarse / MSB, 0-230 degrees</Capability>
+  </Channel>
+  <Channel Name="Pan/Tilt Speed" Preset="SpeedPanTiltFastSlow"/>
+  <Channel Name="Pan Fine">
+    <Group Byte="1">Pan</Group>
+    <Capability Min="0" Max="255">PAN fine / LSB, 16BT ON</Capability>
+  </Channel>
+  <Channel Name="Tilt Fine">
+    <Group Byte="1">Tilt</Group>
+    <Capability Min="0" Max="255">TILT fine / LSB, 16BT ON</Capability>
+  </Channel>
+  <Mode Name="9-Ch 16BT OFF">
+    <Channel Number="0">Control Mode / Program Select</Channel>
+    <Channel Number="1">Red</Channel>
+    <Channel Number="2">Green</Channel>
+    <Channel Number="3">Blue</Channel>
+    <Channel Number="4">Strobe / Auto Speed</Channel>
+    <Channel Number="5">RGB Dimmer (inverted: 0=full, 255=blackout)</Channel>
+    <Channel Number="6">Pan</Channel>
+    <Channel Number="7">Tilt</Channel>
+    <Channel Number="8">Pan/Tilt Speed</Channel>
+  </Mode>
+  <Mode Name="11-Ch 16BT ON">
+    <Channel Number="0">Control Mode / Program Select</Channel>
+    <Channel Number="1">Red</Channel>
+    <Channel Number="2">Green</Channel>
+    <Channel Number="3">Blue</Channel>
+    <Channel Number="4">Strobe / Auto Speed</Channel>
+    <Channel Number="5">RGB Dimmer (inverted: 0=full, 255=blackout)</Channel>
+    <Channel Number="6">Pan</Channel>
+    <Channel Number="7">Tilt</Channel>
+    <Channel Number="8">Pan/Tilt Speed</Channel>
+    <Channel Number="9">Pan Fine</Channel>
+    <Channel Number="10">Tilt Fine</Channel>
+  </Mode>
+  <Physical>
+    <Bulb Type="LED" Lumens="528" ColourTemperature="0"/>
+    <Dimensions Weight="7" Width="220" Height="376" Depth="250"/>
+    <Lens Name="Other" DegreesMin="23" DegreesMax="23"/>
+    <Focus Type="Head" PanMax="540" TiltMax="230"/>
+    <Technical PowerConsumption="160" DmxConnector="3-pin"/>
+  </Physical>
+</FixtureDefinition>

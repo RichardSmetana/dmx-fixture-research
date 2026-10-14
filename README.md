@@ -11,12 +11,10 @@ Technische Dokumentation und DMX-Fixture-Datenbank für ältere, unbekannte oder
 | Gerät | Typ | DMX-Modi | Forschungsstand | Ordner |
 | --- | --- | --- | --- | --- |
 | Fixture 01 | LED PAR (RGBWAUV Wireless), Firmware V2.20 | 7CH verifiziert, 12CH Strobe geprüft | In Untersuchung | [fixture-01-led-par](fixtures/fixture-01-led-par/) |
-| Fixture 02 | Moving Head | Unbekannt | In Untersuchung | [fixture-02-moving-head](fixtures/fixture-02-moving-head/) |
-| Fixture 03 | LED Bar | Unbekannt | Offen | [fixture-03-led-bar](fixtures/fixture-03-led-bar/) |
-| Fixture 04 | Effektgerät | Unbekannt | Offen | [fixture-04-effect-light](fixtures/fixture-04-effect-light/) |
-| Fixture 05 | Unbekannt | Unbekannt | Offen | [fixture-05-unknown](fixtures/fixture-05-unknown/) |
+| Fixture 02 | Moving Head, ZQ00245001 (Schild) | 15CH aus Referenzmanual | In Untersuchung | [fixture-02-uking-zq00245001](fixtures/fixture-02-uking-zq00245001/) |
+| Fixture 03 | Moving Head, INVOLIGHT LEDMH100 | 9CH / 11CH aus Herstellerdoku | In Untersuchung | [fixture-03-involight-ledmh100](fixtures/fixture-03-involight-ledmh100/) |
 
-Die Ordnernamen sind Platzhalter. Nach der Identifikation eines Geräts den Ordner umbenennen, z. B. `fixture-02-moving-head` → `zq00245001-moving-head`, und diese Tabelle aktualisieren.
+Der Ordnername von Fixture 01 ist noch ein Platzhalter. Nach der Identifikation umbenennen, z. B. `fixture-01-led-par` → `rgbwauv-wireless-par`, und diese Tabelle aktualisieren.
 
 ## Aufbau pro Gerät
 
@@ -27,6 +25,7 @@ fixtures/<geräte-id>/
   README.md          — Beschreibung & technische Daten
   dmx-channels.md    — Kanalbelegung je DMX-Modus
   test-notes.md      — Messungen, Besonderheiten, offene Fragen
+  manual.md          — optionale Bedienungsanleitung
   photos/            — Gerätebilder
   profiles/          — Steuerungsprofile (.qxf, optional .json)
 ```
@@ -73,9 +72,9 @@ Offene Einzelfragen können als GitHub Issues geführt werden (z. B. „CH7: E
 
 Vor dem Umschalten auf **public**:
 
-- [ ] Mindestens ein Gerät mit verifizierter Kanalbelegung dokumentiert
-- [ ] Eigene Fotos in `fixtures/*/photos/` (keine fremden Manuals ohne Erlaubnis)
-- [ ] Keine privaten Pfade, Namen oder Internas in Markdown/Issues
+- [x] Mindestens ein Gerät mit verifizierter Kanalbelegung dokumentiert (Fixture 01, 7CH)
+- [x] Eigene Fotos in `fixtures/*/photos/` (keine fremden Manuals ohne Erlaubnis)
+- [x] Keine privaten Pfade, Namen oder Internas in Markdown/Issues
 - [ ] `raw/` enthält nichts Commitbares (weiterhin in `.gitignore`)
 - [ ] README-Geräteverzeichnis aktualisiert (echte Namen, Modi, Stand)
 - [ ] Lizenzhinweis GPL-3.0 und Urheberangaben geprüft

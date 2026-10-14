@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>5.2.1</Version>
+  <Author>dmx-fixture-research</Author>
+ </Creator>
+ <Manufacturer>dmx-fixture-research</Manufacturer>
+ <Model>U'King ZQ00245001 (ZQ02090)</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">Pan Coarse (0-540 deg)</Capability>
+ </Channel>
+ <Channel Name="Pan Fine" Preset="PositionPanFine">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">Pan Fine</Capability>
+ </Channel>
+ <Channel Name="Tilt" Preset="PositionTilt">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt Coarse (0-220 deg)</Capability>
+ </Channel>
+ <Channel Name="Tilt Fine" Preset="PositionTiltFine">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt Fine</Capability>
+ </Channel>
+ <Channel Name="Movement Speed" Preset="SpeedPanTiltFastSlow">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Pan/Tilt Speed (Fast to Slow)</Capability>
+ </Channel>
+ <Channel Name="Master Dimmer" Preset="IntensityMasterDimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Master Dimmer 0-100%</Capability>
+ </Channel>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="255">Strobe Speed Slow to Fast</Capability>
+ </Channel>
+ <Channel Name="Red" Preset="IntensityRed">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Red 0-100%</Capability>
+ </Channel>
+ <Channel Name="Green" Preset="IntensityGreen">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Green 0-100%</Capability>
+ </Channel>
+ <Channel Name="Blue" Preset="IntensityBlue">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Blue 0-100%</Capability>
+ </Channel>
+ <Channel Name="White" Preset="IntensityWhite">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">White 0-100%</Capability>
+ </Channel>
+ <Channel Name="Green Laser">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Green Laser Intensity / On</Capability>
+ </Channel>
+ <Channel Name="Auto / Sound Programs">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="30">No Program</Capability>
+  <Capability Min="31" Max="127">Auto Program 1</Capability>
+  <Capability Min="128" Max="249">Auto Program 2</Capability>
+  <Capability Min="250" Max="255">Sound Control Mode</Capability>
+ </Channel>
+ <Channel Name="LED Ring / Light Belt">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">Off</Capability>
+  <Capability Min="5" Max="109">Lamp Band Color Selection</Capability>
+  <Capability Min="110" Max="255">Automatic Ring Effects</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="249">No Function</Capability>
+  <Capability Min="250" Max="255">Reset (Hold 5s)</Capability>
+ </Channel>
+ <Mode Name="15 Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="2.5" Width="200" Height="250" Depth="200"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="540" TiltMax="220"/>
+<Technical PowerConsumption="30" DmxConnector="3-pin"/>
+</Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan Fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt Fine</Channel>
+  <Channel Number="4">Movement Speed</Channel>
+  <Channel Number="5">Master Dimmer</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Red</Channel>
+  <Channel Number="8">Green</Channel>
+  <Channel Number="9">Blue</Channel>
+  <Channel Number="10">White</Channel>
+  <Channel Number="11">Green Laser</Channel>
+  <Channel Number="12">Auto / Sound Programs</Channel>
+  <Channel Number="13">LED Ring / Light Belt</Channel>
+  <Channel Number="14">Reset</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>14</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="2.5" Width="200" Height="250" Depth="200"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="540" TiltMax="220"/>
+  <Technical PowerConsumption="30" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
