@@ -1,20 +1,31 @@
 # dmx-fixture-research
 
+<p align="center">
+  <img src="images/logo.jpg" alt="dmx-fixture-research" width="480">
+</p>
+
 Reverse engineering, DMX channel mappings, documentation and fixture profiles for vintage and unidentified stage lighting equipment.
 
 Technische Dokumentation und DMX-Fixture-Datenbank für ältere, unbekannte oder schlecht dokumentierte Scheinwerfer. Ziel ist, Messungen und Kanalbelegungen so festzuhalten, dass andere Lichttechniker die Geräte ohne erneute Recherche nutzen können.
 
+Aktuell vier Geräte: ein RGBWAUV-PAR, ein U'King-Pocket-Moving-Head, ein INVOLIGHT-LED-Moving-Head und ein DIP-adressierter RGB-PAR. Zu jedem liegen eine Kanalbelegung, eine Anleitung und ein QLC+-Profil.
+
 > **Status:** privat — inhaltlich auf eine spätere öffentliche Freigabe vorbereitet. Der Ordner `raw/` bleibt lokal und wird nicht veröffentlicht.
 
 ## Geräteverzeichnis
+
+<p align="center">
+  <img src="images/fixtures.jpg" alt="Die vier dokumentierten Scheinwerfer" width="720">
+</p>
 
 | Gerät | Typ | DMX-Modi | Forschungsstand | Ordner |
 | --- | --- | --- | --- | --- |
 | Fixture 01 | LED PAR (RGBWAUV Wireless), Firmware V2.20 | 7CH verifiziert, 12CH Strobe geprüft | In Untersuchung | [fixture-01-led-par](fixtures/fixture-01-led-par/) |
 | Fixture 02 | Moving Head, ZQ00245001 (Schild) | 15CH aus Referenzmanual | In Untersuchung | [fixture-02-uking-zq00245001](fixtures/fixture-02-uking-zq00245001/) |
 | Fixture 03 | Moving Head, INVOLIGHT LEDMH100 | 9CH / 11CH aus Herstellerdoku | In Untersuchung | [fixture-03-involight-ledmh100](fixtures/fixture-03-involight-ledmh100/) |
+| Fixture 04 | LED PAR 36× RGB, DIP | 8CH, teils gemessen | In Untersuchung | [fixture-04-led-par-36x-rgb](fixtures/fixture-04-led-par-36x-rgb/) |
 
-Der Ordnername von Fixture 01 ist noch ein Platzhalter. Nach der Identifikation umbenennen, z. B. `fixture-01-led-par` → `rgbwauv-wireless-par`, und diese Tabelle aktualisieren.
+Der Ordnername von Fixture 01 ist noch ein Platzhalter. Nach der Identifikation umbenennen, z. B. `fixture-01-led-par` → `rgbwauv-wireless-par`, und diese Tabelle aktualisieren. Das Gruppenfoto oben ist eine Übersicht, keine Vermessung der einzelnen Geräte.
 
 ## Aufbau pro Gerät
 

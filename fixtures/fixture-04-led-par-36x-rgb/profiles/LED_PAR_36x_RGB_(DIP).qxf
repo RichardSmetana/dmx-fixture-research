@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>5.2.1</Version>
+  <Author>dmx-fixture-research</Author>
+ </Creator>
+ <Manufacturer>dmx-fixture-research</Manufacturer>
+ <Model>LED PAR 36x RGB (DIP)</Model>
+  <Type>Color Changer</Type>
+  <Channel Name="Red" Preset="IntensityRed"/>
+  <Channel Name="Green" Preset="IntensityGreen"/>
+  <Channel Name="Blue" Preset="IntensityBlue"/>
+  <Channel Name="Color Macros / Fade Speed">
+    <Group Byte="0">Effect</Group>
+    <Capability Min="0" Max="255">Color macro selection; when CH6=128-255: color fade speed, 0-255 (direction unverified)</Capability>
+  </Channel>
+  <Channel Name="Strobe (provisional)">
+    <Group Byte="0">Shutter</Group>
+    <Capability Min="0" Max="15">No strobe - proposed; not measured</Capability>
+    <Capability Min="16" Max="255">Strobe speed - behavior/direction not yet measured</Capability>
+  </Channel>
+  <Channel Name="Color Change / Color Fading">
+    <Group Byte="0">Effect</Group>
+    <Capability Min="0" Max="127">Automatic color change; speed controlled by CH7 (0-255)</Capability>
+    <Capability Min="128" Max="255">Automatic color fading; speed controlled by CH4 (0-255)</Capability>
+  </Channel>
+  <Channel Name="Color Change Speed">
+    <Group Byte="0">Speed</Group>
+    <Capability Min="0" Max="255">Color change speed when CH6=0-127; speed direction not yet verified</Capability>
+  </Channel>
+  <Channel Name="Master Dimmer" Preset="IntensityMasterDimmer"/>
+  <Mode Name="8 Channel - research">
+    <Channel Number="0">Red</Channel>
+    <Channel Number="1">Green</Channel>
+    <Channel Number="2">Blue</Channel>
+    <Channel Number="3">Color Macros / Fade Speed</Channel>
+    <Channel Number="4">Strobe (provisional)</Channel>
+    <Channel Number="5">Color Change / Color Fading</Channel>
+    <Channel Number="6">Color Change Speed</Channel>
+    <Channel Number="7">Master Dimmer</Channel>
+  </Mode>
+  <Physical>
+    <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+    <Dimensions Weight="1.5" Width="200" Height="200" Depth="200"/>
+    <Lens Name="Other" DegreesMin="15" DegreesMax="15"/>
+    <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+    <Technical PowerConsumption="20" DmxConnector="3-pin"/>
+  </Physical>
+</FixtureDefinition>
