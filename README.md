@@ -10,7 +10,7 @@ Technische Dokumentation und DMX-Fixture-Datenbank für ältere, unbekannte oder
 
 | Gerät | Typ | DMX-Modi | Forschungsstand | Ordner |
 | --- | --- | --- | --- | --- |
-| Fixture 01 | LED PAR | Unbekannt | Offen | [fixture-01-led-par](fixtures/fixture-01-led-par/) |
+| Fixture 01 | LED PAR (RGBWAUV Wireless), Firmware V2.20 | 7CH verifiziert, 12CH Strobe geprüft | In Untersuchung | [fixture-01-led-par](fixtures/fixture-01-led-par/) |
 | Fixture 02 | Moving Head | Unbekannt | In Untersuchung | [fixture-02-moving-head](fixtures/fixture-02-moving-head/) |
 | Fixture 03 | LED Bar | Unbekannt | Offen | [fixture-03-led-bar](fixtures/fixture-03-led-bar/) |
 | Fixture 04 | Effektgerät | Unbekannt | Offen | [fixture-04-effect-light](fixtures/fixture-04-effect-light/) |

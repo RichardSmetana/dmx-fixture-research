@@ -1,10 +1,7 @@
 # Profiles — Fixture 01
 
-Hier importierbare Steuerungsdateien ablegen:
+| Datei | Format | Inhalt |
+| --- | --- | --- |
+| [Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf](Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf) | QLC+ 5.2.2 | RGBWAUV Wireless PAR 7CH-12CH, Stand der installierten QLC+-Definition. Feld `Manufacturer`: `dmx-fixture-research` (Projekt, nicht der Hardware-Hersteller). Modus „7 Channel  - probable Rasha/OEM“: Kanalbelegung verifiziert. Modus „12 Channel - probable Rasha/OEM“: CH9 auf Firmware V2.20 geprüft, übrige Kanäle vermutet. |
 
-| Format | Zweck |
-| --- | --- |
-| `.qxf` | QLC+ Fixture-Definition (bevorzugt) |
-| `.json` | Open Fixture Library (optional) |
-
-Dateiname nach Identifikation, z. B. `acme-54x3w-led-par.qxf`.
+Open Fixture Library (`.json`) liegt noch nicht vor.
