@@ -1,9 +1,9 @@
 # Profiles — Fixture 04
 
-| Datei | Format | Inhalt |
+| File | Format | Contents |
 | --- | --- | --- |
-| [LED_PAR_36x_RGB_(DIP).qxf](LED_PAR_36x_RGB_(DIP).qxf) | QLC+ 5.2.1 | Installierte Definition. Feld `Manufacturer`: `dmx-fixture-research`. Modell: `LED PAR 36x RGB (DIP)`. Modus `8 Channel - research`. CH5 ist im Profil als ungemessen gekennzeichnet. |
+| [LED_PAR_36x_RGB_(DIP).qxf](LED_PAR_36x_RGB_(DIP).qxf) | QLC+ 5.2.1 | Installed definition. `Manufacturer` field: `dmx-fixture-research`. Model: `LED PAR 36x RGB (DIP)`. Mode `8 Channel - research`. CH5 is marked in the profile as not measured. |
 
-20 W, 1,5 kg, 200 × 200 × 200 mm und 15° sind Platzhalter im Profil.
+20 W, 1.5 kg, 200 × 200 × 200 mm, and 15° are placeholders in the profile.
 
-Open Fixture Library (`.json`) liegt noch nicht vor.
+An Open Fixture Library (`.json`) file is not included yet.

@@ -4,97 +4,95 @@
   <img src="images/logo.jpg" alt="dmx-fixture-research" width="480">
 </p>
 
-Reverse engineering, DMX channel mappings, documentation and fixture profiles for vintage and unidentified stage lighting equipment.
+Reverse engineering, DMX channel mappings, documentation, and fixture profiles for vintage and unidentified stage lighting equipment.
 
-Technische Dokumentation und DMX-Fixture-Datenbank für ältere, unbekannte oder schlecht dokumentierte Scheinwerfer. Ziel ist, Messungen und Kanalbelegungen so festzuhalten, dass andere Lichttechniker die Geräte ohne erneute Recherche nutzen können.
+The aim is to record measurements and channel maps so other lighting technicians can use the fixtures without repeating the research.
 
-Aktuell vier Geräte: ein RGBWAUV-PAR, ein U'King-Pocket-Moving-Head, ein INVOLIGHT-LED-Moving-Head und ein DIP-adressierter RGB-PAR. Zu jedem liegen eine Kanalbelegung, eine Anleitung und ein QLC+-Profil.
+Four fixtures are documented: an RGBWAUV PAR, a U'King pocket moving head, an INVOLIGHT LED moving head, and a DIP-addressed RGB PAR. Each has a channel map, a manual, and a QLC+ profile.
 
-> **Status:** privat — inhaltlich auf eine spätere öffentliche Freigabe vorbereitet. Der Ordner `raw/` bleibt lokal und wird nicht veröffentlicht.
+> **Status:** public. The `raw/` folder stays local and is not published.
 
-## Geräteverzeichnis
+## Fixture index
 
 <p align="center">
-  <img src="images/fixtures.jpg" alt="Die vier dokumentierten Scheinwerfer" width="720">
+  <img src="images/fixtures.jpg" alt="The four documented fixtures" width="720">
 </p>
 
-| Gerät | Typ | DMX-Modi | Forschungsstand | Ordner |
+| Fixture | Type | DMX modes | Research status | Folder |
 | --- | --- | --- | --- | --- |
-| Fixture 01 | LED PAR (RGBWAUV Wireless), Firmware V2.20 | 7CH verifiziert, 12CH Strobe geprüft | In Untersuchung | [fixture-01-led-par](fixtures/fixture-01-led-par/) |
-| Fixture 02 | Moving Head, ZQ00245001 (Schild) | 15CH aus Referenzmanual | In Untersuchung | [fixture-02-uking-zq00245001](fixtures/fixture-02-uking-zq00245001/) |
-| Fixture 03 | Moving Head, INVOLIGHT LEDMH100 | 9CH / 11CH aus Herstellerdoku | In Untersuchung | [fixture-03-involight-ledmh100](fixtures/fixture-03-involight-ledmh100/) |
-| Fixture 04 | LED PAR 36× RGB, DIP | 8CH, teils gemessen | In Untersuchung | [fixture-04-led-par-36x-rgb](fixtures/fixture-04-led-par-36x-rgb/) |
+| Fixture 01 | LED PAR (RGBWAUV wireless), firmware V2.20 | 7CH verified, 12CH strobe tested | In progress | [fixture-01-led-par](fixtures/fixture-01-led-par/) |
+| Fixture 02 | Moving head, ZQ00245001 (label) | 15CH from the reference manual | In progress | [fixture-02-uking-zq00245001](fixtures/fixture-02-uking-zq00245001/) |
+| Fixture 03 | Moving head, INVOLIGHT LEDMH100 | 9CH / 11CH from the manufacturer manual | In progress | [fixture-03-involight-ledmh100](fixtures/fixture-03-involight-ledmh100/) |
+| Fixture 04 | LED PAR 36× RGB, DIP | 8CH, partly measured | In progress | [fixture-04-led-par-36x-rgb](fixtures/fixture-04-led-par-36x-rgb/) |
 
-Der Ordnername von Fixture 01 ist noch ein Platzhalter. Nach der Identifikation umbenennen, z. B. `fixture-01-led-par` → `rgbwauv-wireless-par`, und diese Tabelle aktualisieren. Das Gruppenfoto oben ist eine Übersicht, keine Vermessung der einzelnen Geräte.
+The Fixture 01 folder name is still a placeholder. Rename it after identification, for example `fixture-01-led-par` → `rgbwauv-wireless-par`, and update this table. The group photo is an overview, not a measurement of the individual units.
 
-## Aufbau pro Gerät
-
-Jeder Gerätetyp verwendet dieselbe Struktur:
+## Layout of each fixture
 
 ```text
-fixtures/<geräte-id>/
-  README.md          — Beschreibung & technische Daten
-  dmx-channels.md    — Kanalbelegung je DMX-Modus
-  test-notes.md      — Messungen, Besonderheiten, offene Fragen
-  manual.md          — optionale Bedienungsanleitung
-  photos/            — Gerätebilder
-  profiles/          — Steuerungsprofile (.qxf, optional .json)
+fixtures/<fixture-id>/
+  README.md          — description and technical data
+  dmx-channels.md    — channel map for each DMX mode
+  test-notes.md      — measurements, quirks, open questions
+  manual.md          — operating manual
+  photos/            — fixture photos
+  profiles/          — control profiles (.qxf, optional .json)
 ```
 
-### Was dokumentiert wird
+### What is recorded
 
-1. **Geräteidentifikation** — Fotos (Vorderseite, Rückseite, Anschlüsse, Typenschild, Display, ggf. Platine), Abmessungen, LED-Bestückung, Versorgungsspannung, Beschriftungen, vermutete baugleiche Modelle.
-2. **DMX-Kanalbelegung** — alle Modi getrennt; Kanalnummer, Funktion, Wertebereiche 0–255, Richtung der Effekte, Besonderheiten.
-3. **Experimentelle Ergebnisse** — getestete Werte, verifizierte vs. vermutete Funktionen, Firmware-Versionen, Unterschiede zwischen Exemplaren.
-4. **Fixture-Profile** — importierbare Dateien für Lichtsteuerungssoftware (zuerst QLC+ `.qxf`).
+1. **Identification** — photos (front, rear, connectors, rating label, display, and the circuit board if useful), dimensions, LED fit, supply voltage, markings, and likely equivalent models.
+2. **DMX channel map** — each mode separately; channel number, function, 0–255 ranges, effect direction, and quirks.
+3. **Test results** — values tried, verified versus suspected functions, firmware versions, and differences between units.
+4. **Fixture profiles** — importable files for lighting software, starting with QLC+ `.qxf`.
 
-### Status der Kanalzuordnung
+### Channel status
 
-Bei unbekannten Geräten immer einen der drei Zustände angeben:
+Use one of these states. A value taken from a manual or from the QXF is not **Verified** until it has been checked on the unit.
 
-| Status | Bedeutung |
+| Status | Meaning |
 | --- | --- |
-| **Verifiziert** | Am Gerät getestet und bestätigt |
-| **Vermutet** | Plausibel, aber noch nicht sicher belegt |
-| **Offen** / **Unbekannt** | Noch nicht oder nicht ausreichend geprüft |
+| **Verified** | Tested and confirmed on the unit |
+| **Suspected** | Plausible, but not yet confirmed |
+| **Open** | Not yet tested, or not tested well enough |
+| **Reference manual** | Printed in a cited manual, not measured on this unit |
+| **Profile** | Present only in the QXF |
 
-## Forschungsablauf
+## Research steps
 
-1. Gerät fotografieren (Gehäuse, Anschlüsse, Etiketten, Bedienelemente)
-2. Identifikation recherchieren (Modellnummern, baugleiche Geräte, Manuals)
-3. DMX-Modi bestimmen (Menüoptionen, verfügbare Kanalzahlen)
-4. Kanäle systematisch testen (Funktionen und Wertebereiche protokollieren)
-5. Steuerungsprofil erstellen (QLC+-Datei anlegen und mit dem Gerät prüfen)
-6. Ergebnisse veröffentlichen (README aktualisieren, offene Fragen dokumentieren)
+1. Photograph the fixture (housing, connectors, labels, controls).
+2. Identify it (model numbers, equivalent products, manuals).
+3. Determine the DMX modes (menu options and channel counts).
+4. Test channels systematically and record functions and value ranges.
+5. Build a control profile and check the QLC+ file against the fixture.
+6. Publish the result (update the README and record open questions).
 
-Offene Einzelfragen können als GitHub Issues geführt werden (z. B. „CH7: Effekt ab DMX-Wert 132 noch ungeklärt“), damit die Gerätedokumentation übersichtlich bleibt.
+Single open questions can be GitHub issues (for example, “CH7: effect from DMX value 132 still unclear”) so the fixture page stays readable.
 
-## Dateiformate
+## File formats
 
-| Format | Verwendungszweck | Priorität |
+| Format | Use | Priority |
 | --- | --- | --- |
-| `.md` | Gerätebeschreibung, Tabellen, Forschung | Sehr hoch |
-| `.jpg` / `.png` | Fotos, Platinen, Bedienelemente | Sehr hoch |
-| `.qxf` | Importierbare QLC+-Gerätedefinition | Hoch |
+| `.md` | Description, tables, research notes | Very high |
+| `.jpg` / `.png` | Photos, boards, controls | Very high |
+| `.qxf` | Importable QLC+ fixture definition | High |
 | `.json` | Open Fixture Library | Optional |
-| `.pdf` | Eigene Anleitungen und Datenblätter | Optional |
+| `.pdf` | Project manuals and data sheets | Optional |
 
-## Veröffentlichung (Checkliste)
+## Publication checklist
 
-Vor dem Umschalten auf **public**:
+The repository is public. These items are still open:
 
-- [x] Mindestens ein Gerät mit verifizierter Kanalbelegung dokumentiert (Fixture 01, 7CH)
-- [x] Eigene Fotos in `fixtures/*/photos/` (keine fremden Manuals ohne Erlaubnis)
-- [x] Keine privaten Pfade, Namen oder Internas in Markdown/Issues
-- [ ] `raw/` enthält nichts Commitbares (weiterhin in `.gitignore`)
-- [ ] README-Geräteverzeichnis aktualisiert (echte Namen, Modi, Stand)
-- [ ] Lizenzhinweis GPL-3.0 und Urheberangaben geprüft
-- [ ] Optional: QLC+-Profile (`.qxf`) getestet und abgelegt
+- [x] At least one fixture has a verified channel map (Fixture 01, 7CH)
+- [x] Project photos are in `fixtures/*/photos/` (no third-party manuals without permission)
+- [x] No private paths or personal names in the Markdown
+- [ ] `raw/` contains nothing that can be committed (it stays in `.gitignore`)
+- [ ] Fixture 01 folder renamed once the manufacturer and model are known
+- [ ] GPL-3.0 notice and credits reviewed
+- [ ] QLC+ profiles driven live against every fixture (the `.qxf` files are stored; live checks are still open)
 
-Danach auf GitHub: Repository → **Settings** → Visibility → **Public** (oder `gh repo edit --visibility public`).
+## License and contributions
 
-## Lizenz und Beiträge
-
-- Inhalt dieses Repositorys: [GNU General Public License v3.0](LICENSE) (GPL-3.0).
-- Fremde Handbücher nur mit Erlaubnis hochladen; sonst auf die Fundstelle verlinken.
-- Nach der öffentlichen Freigabe: Pull Requests und Issues für Korrekturen, neue Geräte und ungeklärte Kanäle willkommen.
+- Repository contents: [GNU General Public License v3.0](LICENSE) (GPL-3.0).
+- Upload someone else's manual only with permission. Otherwise link to it.
+- Pull requests and issues are welcome for corrections, new fixtures, and unresolved channels.

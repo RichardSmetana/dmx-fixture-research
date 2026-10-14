@@ -1,95 +1,95 @@
 # Fixture 02 — U'King ZQ00245001
 
-| Feld | Wert |
+| Field | Value |
 | --- | --- |
 | ID | `fixture-02-uking-zq00245001` |
-| Typ | Moving Head / Pocket Moving Light (Kaleidoskop + Laser) |
-| Profil-Hersteller | dmx-fixture-research |
-| Hardware-Hersteller / Modell | Schild: ZQ00245001, Dongguan Tongquanqiu Shiye Limited Company. Marktname U'King. Im QXF zusätzlich `(ZQ02090)` |
-| Forschungsstand | In Untersuchung |
-| DMX-Modi | 15 Kanäle, aus dem Referenzmanual. Nicht am Gerät gemessen |
+| Type | Moving head / pocket moving light (kaleidoscope + laser) |
+| Profile manufacturer | dmx-fixture-research |
+| Hardware manufacturer / model | Label: ZQ00245001, Dongguan Tongquanqiu Shiye Limited Company. Market name U'King. The QXF also appends `(ZQ02090)` |
+| Research status | In progress |
+| DMX modes | 15 channels, from the reference manual. Not measured on the unit |
 | Firmware | |
-| Versorgung | 230-V-Flachstecker „POWER“, wie an Radios. Kein Niedervoltstecker |
-| Exemplare im Bestand | — |
-| Dokumentationsstand | [Anleitung Rev. 1.0](manual.md) – Oktober 2026 |
+| Supply | 230 V figure-8 / flat radio-style inlet labeled POWER. Not a low-voltage connector |
+| Units on hand | — |
+| Documentation | [Manual rev. 1.0](manual.md) — October 2026 |
 
-## Kurzbeschreibung
+## Summary
 
-Kompakter Moving Head mit RGBW-Haupt-LED, Kaleidoskop-Optik, grünem Laser, RGB-LED-Ring sowie Pan und Tilt. Ein Modus mit 15 Kanälen. Die Kanalreihenfolge steht im öffentlichen Pocket-Moving-Light-Manual und stimmt mit dem QLC+-Profil überein. Am Gerät ist noch nichts gemessen.
+Compact moving head with an RGBW main LED, kaleidoscope optics, a green laser, an RGB LED ring, and pan and tilt. One 15-channel mode. The channel order is in the public pocket-moving-light manual and matches the QLC+ profile. Nothing has been measured on this unit yet.
 
-Auf dem Sockel steht **Model: ZQ00245001**. Der Herstelleraufdruck lautet Dongguan Tongquanqiu Shiye Limited Company, am Schildrand abgeschnitten. U'King ist der Marktname aus den Fixture-Listen und steht nicht auf diesem Schild. Im Profil heißt das Modell `U'King ZQ00245001 (ZQ02090)`; ZQ02090 ist auf dem Schild nicht zu sehen.
+The base is printed **Model: ZQ00245001**. The manufacturer line reads Dongguan Tongquanqiu Shiye Limited Company and is cut off at the edge of the label. U'King is the market name from fixture lists and is not on this label. The profile model string is `U'King ZQ00245001 (ZQ02090)`. ZQ02090 is not on the label.
 
-Profil: [`profiles/ZQ00245001-15CH.qxf`](profiles/ZQ00245001-15CH.qxf) (QLC+ 5.2.1). Das Feld `Manufacturer` ist `dmx-fixture-research` und bezeichnet dieses Projekt, nicht den Gerätehersteller.
+Profile: [`profiles/ZQ00245001-15CH.qxf`](profiles/ZQ00245001-15CH.qxf) (QLC+ 5.2.1). The `Manufacturer` field is `dmx-fixture-research` and names this project, not the hardware maker.
 
-Der grüne Laser hat keine bekannte Laserschutzklasse. CH12 bleibt bei Tests auf 0, bis Klasse und Aufstellort geklärt sind.
+The green laser has no known laser class. Keep CH12 at 0 during tests until the class and the projection area are known.
 
-## Identifikation
+## Identification
 
-### Beschriftungen und Typenschild
+### Markings and rating label
 
-- Modellnummer: ZQ00245001, Aufdruck auf dem Sockel
-- Herstelleraufdruck: Dongguan Tongquanqiu Shiye Limited Company. Die Zeile endet am Schildrand mit „Limitedcompan“
-- Anschrift Hersteller: 6th Floor, Office Building, Yidalong Science and Technology Park, Bihu Industrial Zone, 39 Bihu Avenue, Wullan Village, Fenggang Town, Dongguan. Auf dem Schild ohne Leerzeichen, „Office“ als „Of ice“
-- Importeur: eVatmaster Consulting GmbH, Bettinastr. 30, Frankfurt am Main. Die Importeurzeile nennt 60325, der EC-REP-Kasten 60326. `contact@evatmaster.com`. Die Importeurzeile ist teilweise überdeckt
-- Weitere Bezeichnung im QXF: ZQ02090, nicht auf dem Schild
-- Seriennummer: nicht auf dem Schild
-- Zeichen: CE, auf dem Sockelschild „ROSH“, an der Front „RoHS“, WEEE, Made in China
+- Model number: ZQ00245001, printed on the base
+- Manufacturer print: Dongguan Tongquanqiu Shiye Limited Company. The line ends at the label edge with “Limitedcompan”
+- Manufacturer address: 6th Floor, Office Building, Yidalong Science and Technology Park, Bihu Industrial Zone, 39 Bihu Avenue, Wullan Village, Fenggang Town, Dongguan. Printed without spaces, and “Office” as “Of ice”
+- Importer: eVatmaster Consulting GmbH, Bettinastr. 30, Frankfurt am Main. The importer line says postal code 60325; the EC REP box says 60326. `contact@evatmaster.com`. Part of the importer line is smudged
+- Extra name in the QXF: ZQ02090, not on the label
+- Serial number: not on the label
+- Marks: CE, “ROSH” on the base label, “RoHS” on the front, WEEE, Made in China
 - Firmware:
 
-### Technische Daten
+### Technical data
 
-Profilwerte sind keine Labormessung. Lumen und Farbtemperatur im QLC+-Profil stehen auf 0.
+Profile values are not laboratory measurements. Lumens and color temperature in the QLC+ profile are 0.
 
-| Eigenschaft | Wert | Quelle |
+| Property | Value | Source |
 | --- | --- | --- |
-| Hauptoptik | Facettenlinse aus Sechsecken am Kopf | Foto |
-| LED-Feld | Rundes Feld kleiner LEDs auf der Kopfoberseite, kleine Öffnung in der Mitte. 36 × RGB 5050 nur im Referenzmanual, nicht gezählt | Foto / Referenzmanual |
-| Laser | grün, angegeben als 150 mA. Das ist kein optischer Leistungswert und keine Schutzklasse | Referenzmanual |
-| Pan / Tilt | 540° / 220°, Fokus fest | QLC+-Profil, nicht am Gerät geprüft |
-| Abmessungen (B×H×T) | 200 × 250 × 200 mm | QLC+-Profil, nicht gemessen |
-| Gewicht | 2,5 kg | QLC+-Profil, nicht gemessen |
-| Versorgung | Flachstecker 230 V, beschriftet POWER, Bauform wie Radios. Schild ohne Spannungsaufdruck. Referenzmanual der Netzvariante: 100–240 V AC, 50/60 Hz. Die 12-V-DC-Variante gilt hier nicht | Foto / Nutzerangabe / Referenzmanual |
-| Leistungsaufnahme | 30 W | Referenzmanual und QLC+-Profil. Typenschild noch nicht gelesen |
-| Umgebungstemperatur | max. 40 °C | Referenzmanual |
-| DMX | Buchsen beschriftet DMX IN und DMX OUT, 3-polig. Kanalzahl 15 nur aus dem Manual | Foto / Referenzmanual |
-| Display / Menü | 4-stellige Anzeige, Aufdruck LED DISPLAY. Tasten von links: MENU, UP, DOWN, ENTER | Foto. Menücodes weiter nur aus dem Referenzmanual |
+| Main optic | Hexagonal faceted lens on the head | Photo |
+| LED field | Round field of small LEDs on the top of the head, small opening in the center. 36 × RGB 5050 only in the reference manual, not counted | Photo / reference manual |
+| Laser | Green, listed as 150 mA. That is not an optical power figure and not a laser class | Reference manual |
+| Pan / tilt | 540° / 220°, focus fixed | QLC+ profile, not checked on the unit |
+| Dimensions (W×H×D) | 200 × 250 × 200 mm | QLC+ profile, not measured |
+| Weight | 2.5 kg | QLC+ profile, not measured |
+| Supply | 230 V figure-8 / flat radio-style inlet labeled POWER. The label does not print a voltage. Reference manual, mains variant: 100–240 V AC, 50/60 Hz. The 12 V DC variant does not apply to this unit | Photo / user report / reference manual |
+| Power consumption | 30 W | Reference manual and QLC+ profile. Not read from the rating label |
+| Ambient temperature | Maximum 40 °C | Reference manual |
+| DMX | Sockets labeled DMX IN and DMX OUT, 3-pin. Channel count 15 only from the manual | Photo / reference manual |
+| Display / menu | 4-digit display, printed LED DISPLAY. Buttons from the left: MENU, UP, DOWN, ENTER | Photo. Menu codes only from the reference manual |
 
-### Menü (Kurz)
+### Menu (short)
 
-Ausführlich in [manual.md](manual.md). `d001` Adresse, `CH15` DMX-Modus, `Au01` / `Au02` Automatik, `SnOn` / `SnOFF` Sound, `rPoF` / `rPon` Pan-Richtung, `rToF` / `rTon` Tilt-Richtung, `rdoF` / `rdon` Display, `dFoF` / `dFon` Initialisierung (unklar), `RST` / `REST` Reset.
+Full map in [manual.md](manual.md). `d001` address, `CH15` DMX mode, `Au01` / `Au02` automatic, `SnOn` / `SnOFF` sound, `rPoF` / `rPon` pan direction, `rToF` / `rTon` tilt direction, `rdoF` / `rdon` display, `dFoF` / `dFon` initialization (unclear), `RST` / `REST` reset.
 
-### Fotos
+### Photos
 
-| Datei | Inhalt |
+| File | Contents |
 | --- | --- |
-| [photos/label-base.jpg](photos/label-base.jpg) | Sockelschild, Modell ZQ00245001 |
-| [photos/head-kaleidoscope.jpg](photos/head-kaleidoscope.jpg) | Facettenlinse, Buchsen POWER, DMX IN, DMX OUT |
-| [photos/head-led-field.jpg](photos/head-led-field.jpg) | LED-Feld auf der Kopfoberseite, Bügel |
-| [photos/base-display.jpg](photos/base-display.jpg) | Display und Tasten MENU UP DOWN ENTER |
+| [photos/label-base.jpg](photos/label-base.jpg) | Base label, model ZQ00245001 |
+| [photos/head-kaleidoscope.jpg](photos/head-kaleidoscope.jpg) | Faceted lens, sockets POWER, DMX IN, DMX OUT |
+| [photos/head-led-field.jpg](photos/head-led-field.jpg) | LED field on top of the head, yoke |
+| [photos/base-display.jpg](photos/base-display.jpg) | Display and buttons MENU UP DOWN ENTER |
 
-Noch offen: Stromangabe am Schild, Laserschutzklasse, Seriennummer.
+Still open: current and power printed on the label, laser class, serial number.
 
-## Dokumentation in diesem Ordner
+## Files in this folder
 
-| Datei | Inhalt |
+| File | Contents |
 | --- | --- |
-| [manual.md](manual.md) | Bedienungsanleitung Rev. 1.0 |
-| [dmx-channels.md](dmx-channels.md) | 15-Kanal-Belegung mit Quellenstatus |
-| [test-notes.md](test-notes.md) | Was belegt ist und was am Gerät fehlt |
-| [profiles/ZQ00245001-15CH.qxf](profiles/ZQ00245001-15CH.qxf) | QLC+-Fixture, Stand der installierten Definition |
+| [manual.md](manual.md) | Operating manual rev. 1.0 |
+| [dmx-channels.md](dmx-channels.md) | 15-channel map with source status |
+| [test-notes.md](test-notes.md) | What is documented and what is still missing on the unit |
+| [profiles/ZQ00245001-15CH.qxf](profiles/ZQ00245001-15CH.qxf) | QLC+ fixture, matching the installed definition |
 
-## Offene Fragen
+## Open questions
 
-- [x] Modell ZQ00245001 auf dem Sockelschild
-- [x] Herstelleraufdruck und Importeur gelesen
-- [x] POWER ist ein 230-V-Flachstecker, kein Niedervoltstecker
-- [ ] Strom und Leistungsaufdruck am Schild. 30 W steht nur in Manual und Profil
-- [ ] Laserschutzklasse
-- [x] DMX-Modus und Kanalzahl aus dem Referenzmanual (15)
-- [ ] Mindestens ein Modus am Gerät verifiziert
-- [ ] Pan 540° und Tilt 220° gemessen
-- [ ] Richtung von CH5 und Verhalten von CH7
-- [ ] Haltedauer des Resets auf CH15 (Profil: 5 s)
+- [x] Model ZQ00245001 on the base label
+- [x] Manufacturer print and importer read
+- [x] POWER is a 230 V figure-8 / flat radio-style inlet, not a low-voltage connector
+- [ ] Current and power printed on the label. 30 W is only in the manual and the profile
+- [ ] Laser class
+- [x] DMX mode and channel count from the reference manual (15)
+- [ ] At least one mode verified on the unit
+- [ ] Pan 540° and tilt 220° measured
+- [ ] Direction of CH5 and behavior of CH7
+- [ ] Reset hold time on CH15 (profile: 5 s)
 - [ ] `dFoF` / `dFon`
-- [x] QLC+-Profil entspricht der installierten Definition
-- [ ] Profil mit dem Gerät gefahren
+- [x] QLC+ profile matches the installed definition
+- [ ] Profile driven live against the fixture

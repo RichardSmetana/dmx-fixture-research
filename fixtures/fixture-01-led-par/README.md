@@ -1,89 +1,89 @@
-# Fixture 01 — LED PAR (RGBWAUV Wireless)
+# Fixture 01 — LED PAR (RGBWAUV wireless)
 
-| Feld | Wert |
+| Field | Value |
 | --- | --- |
-| Platzhalter-ID | `fixture-01-led-par` |
-| Typ | LED PAR / Color Changer |
-| Profil-Hersteller | dmx-fixture-research |
-| Hardware-Hersteller / Modell | Unbekannt / Rasha-kompatibler OEM — RGBWAUV Wireless PAR 7CH-12CH |
-| Forschungsstand | In Untersuchung |
-| DMX-Modi | 7CH verifiziert; 12CH Strobe (CH9) auf V2.20 geprüft, übrige Kanäle vermutet |
+| Placeholder ID | `fixture-01-led-par` |
+| Type | LED PAR / color changer |
+| Profile manufacturer | dmx-fixture-research |
+| Hardware manufacturer / model | Unknown / Rasha-compatible OEM — RGBWAUV Wireless PAR 7CH-12CH |
+| Research status | In progress |
+| DMX modes | 7CH verified; 12CH strobe (CH9) tested on V2.20; remaining 12CH channels suspected |
 | Firmware | V2.20 |
-| Versorgung | AC 90–240 V (Aufdruck am Gerät); 90 W nur Profilwert |
-| Exemplare im Bestand | — |
-| Dokumentationsstand | [Anleitung Rev. 1.1](manual.md) – Oktober 2026 |
+| Supply | AC 90–240 V printed on the fixture; 90 W is a profile value only |
+| Units on hand | — |
+| Documentation | [Manual rev. 1.1](manual.md) — October 2026 |
 
-## Kurzbeschreibung
+## Summary
 
-Kompakter RGBWAUV-LED-PAR mit sieben Optiken, DMX512 (3-poliger XLR, Ein und Aus), Wireless-DMX über Stabantenne, Standalone, Sound und Master/Slave. Die Frequenz 2,4 GHz steht in der Gerätebeschreibung, nicht auf dem Gehäuse. Bedienfeld und Menü ähneln dem Rasha Professional HEX V12 Wireless Flat PAR. Der Hardware-Hersteller ist nicht nachgewiesen.
+Compact RGBWAUV LED PAR with seven optics, wired DMX512 (3-pin XLR in and out), wireless DMX through a whip antenna, standalone, sound, and master/slave. The 2.4 GHz figure comes from the fixture description, not from the housing. The panel and menu resemble the Rasha Professional HEX V12 Wireless Flat PAR. The hardware manufacturer is not identified.
 
-Der **7-Kanal-Modus** ist am Gerät verifiziert: Rot, Grün, Blau, Weiß, Amber, UV, Strobe. Im **12-Kanal-Profil** liegen Amber und Weiß vertauscht (Amber CH4, Weiß CH5); diese Reihenfolge ist noch nicht vollständig nachgemessen. Die Wertebereiche auf CH9 sind auf Firmware V2.20 geprüft, die Pulsrichtung stammt aus der Fixture-Datei. Die übrigen 12CH-Kanäle folgen der Fixture-Definition.
+The **7-channel mode** is verified on the unit: red, green, blue, white, amber, UV, strobe. In the **12-channel profile**, amber and white are swapped (amber CH4, white CH5). That order has not been fully remeasured. The CH9 value ranges were tested on firmware V2.20. The pulse direction comes from the fixture file. The other 12CH channels follow the fixture definition.
 
-Profil: [`profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf`](profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf) (QLC+ 5.2.2). Das Feld `Manufacturer` darin ist `dmx-fixture-research` und bezeichnet dieses Projekt, nicht den Gerätehersteller. Der 7CH-Modus heißt im Profil `7 Channel  - probable Rasha/OEM`; die Kanalbelegung selbst ist verifiziert.
+Profile: [`profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf`](profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf) (QLC+ 5.2.2). The `Manufacturer` field is `dmx-fixture-research` and names this project, not the hardware maker. The 7CH mode is named `7 Channel  - probable Rasha/OEM` in the profile (two spaces before the dash). The channel map itself is verified. The 12CH mode is named `12 Channel - probable Rasha/OEM`.
 
-Der Ordnername bleibt der Platzhalter, bis Typenschild und Modell feststehen.
+The folder name stays a placeholder until the rating label and model are known.
 
-## Identifikation
+## Identification
 
-### Beschriftungen und Typenschild
+### Markings and rating label
 
-- Modellnummer: nicht erfasst (Arbeitsname: RGBWAUV Wireless PAR 7CH-12CH)
-- Seriennummer:
-- Firmware am Gerät: V2.20 (`Ver` im Menü)
-- Weitere Aufkleber / Logos: CE, WEEE und RoHS auf der Rückseite. Kein Hersteller- oder Modellname lesbar. Menü ähnlich Rasha HEX V12.
+- Model number: not recorded (working name: RGBWAUV Wireless PAR 7CH-12CH)
+- Serial number:
+- Firmware on the unit: V2.20 (`Ver` in the menu)
+- Other marks: CE, WEEE, and RoHS on the rear. No manufacturer or model name is readable. Menu similar to the Rasha HEX V12.
 
-### Technische Daten
+### Technical data
 
-Profilwerte sind keine Labormessung. Lumen und Farbtemperatur im QLC+-Profil stehen auf 0.
+Profile values are not laboratory measurements. Lumens and color temperature in the QLC+ profile are 0.
 
-| Eigenschaft | Wert | Quelle |
+| Property | Value | Source |
 | --- | --- | --- |
-| Abmessungen (B×H×T) | 220 × 220 × 90 mm | QLC+-Profil, nicht unabhängig geprüft |
-| Gewicht | 1 kg | QLC+-Profil, nicht unabhängig geprüft |
-| LED-Bestückung | 7 Optiken, Anordnung 2–3–2, RGBWAUV | Foto Vorderseite / verifizierter 7CH-Modus |
-| Strahlwinkel | Fresnel, fest, 25–40° | QLC+-Profil, nicht unabhängig geprüft |
-| Versorgungsspannung | AC 90–240 V, Aufdruck „POWER IN“. Frequenz nicht aufgedruckt | Foto Rückseite |
-| Leistungsaufnahme | 90 W | QLC+-Profil |
-| Umgebungstemperatur | konservativ max. 45 °C, bis das Schild bestätigt ist | Rasha-Doku nennt 45 °C und 50 °C |
-| DMX In/Out | 3-poliger XLR, von links DMX OUT dann DMX IN. Stabantenne vorhanden, keine eigene Wireless-LED sichtbar | Foto Rückseite |
-| Netz Ein/Aus | IEC-Eingang „POWER IN“ und IEC-Ausgang „POWER OUT“. Sicherungswert nicht lesbar | Foto Rückseite |
-| Display / Menü | 4-stellige 7-Segment-Anzeige. Tasten von links: MENU, DOWN, UP, ENTER. Firmware V2.20 | Foto Rückseite / Anleitung Rev. 1.1 |
-| Vermutete baugleiche Modelle | Rasha Professional HEX V12 Wireless Flat PAR | ähnliches Menü; 32 DMX-Farbpresets der Rasha-Doku werden nicht verwendet |
+| Dimensions (W×H×D) | 220 × 220 × 90 mm | QLC+ profile, not independently checked |
+| Weight | 1 kg | QLC+ profile, not independently checked |
+| LED fit | 7 optics, 2–3–2 layout, RGBWAUV | Front photo / verified 7CH mode |
+| Beam angle | Fresnel, fixed, 25–40° | QLC+ profile, not independently checked |
+| Supply voltage | AC 90–240 V, printed “POWER IN”. Frequency not printed | Rear photo |
+| Power consumption | 90 W | QLC+ profile |
+| Ambient temperature | Conservative maximum 45 °C until the label confirms it | Rasha documentation cites both 45 °C and 50 °C |
+| DMX in/out | 3-pin XLR, DMX OUT then DMX IN from the left. Whip antenna present. No separate wireless LED | Rear photo |
+| Mains in/out | IEC “POWER IN” and IEC “POWER OUT”. Fuse rating not readable | Rear photo |
+| Display / menu | 4-digit 7-segment display. Buttons from the left: MENU, DOWN, UP, ENTER. Firmware V2.20 | Rear photo / manual rev. 1.1 |
+| Likely equivalent | Rasha Professional HEX V12 Wireless Flat PAR | Similar menu; the 32 Rasha DMX color presets are not used |
 
-### Menü (Kurz)
+### Menu (short)
 
-Ausführlich in [manual.md](manual.md). `Addr` 001–512, `Chnd` 7/12, `SLnd` Slav/Nast/Sync/CliC, `CoLo` 1–38, `FADE` 1–3, `FLAS` 1–100, `Auto` 1–9, `Soun` 1–6, `Cust` CC1–CC5, `Dinn` 1–3, `Blnd`, `LED`, `Disp`, `Test`, `Fhrs`, `Ver`, `Rest`.
+Full map in [manual.md](manual.md). `Addr` 001–512, `Chnd` 7/12, `SLnd` Slav/Nast/Sync/CliC, `CoLo` 1–38, `FADE` 1–3, `FLAS` 1–100, `Auto` 1–9, `Soun` 1–6, `Cust` CC1–CC5, `Dinn` 1–3, `Blnd`, `LED`, `Disp`, `Test`, `Fhrs`, `Ver`, `Rest`.
 
-Die 38 Menüfarben sind unabhängig von den acht DMX-Bereichen auf CH7 im 12CH-Modus.
+The 38 menu colors are independent of the eight DMX ranges on CH7 in 12CH mode.
 
-### Fotos
+### Photos
 
-| Datei | Inhalt |
+| File | Contents |
 | --- | --- |
-| [photos/front-optics.jpg](photos/front-optics.jpg) | Vorderseite, sieben LED-Optiken, Bügel |
-| [photos/rear-three-quarter.jpg](photos/rear-three-quarter.jpg) | Rückseite schräg, Display, Bügel, Lüftung |
-| [photos/rear-panel.jpg](photos/rear-panel.jpg) | Anschlüsse, Tasten, Aufdruck AC 90–240 V |
+| [photos/front-optics.jpg](photos/front-optics.jpg) | Front, seven LED optics, yoke |
+| [photos/rear-three-quarter.jpg](photos/rear-three-quarter.jpg) | Rear three-quarter, display, yoke, vents |
+| [photos/rear-panel.jpg](photos/rear-panel.jpg) | Connectors, buttons, AC 90–240 V print |
 
-Noch offen: Typenschild mit Hersteller und Modell, Sicherungswert, Platine.
+Still open: a rating label with manufacturer and model, the fuse rating, and the circuit board.
 
-## Dokumentation in diesem Ordner
+## Files in this folder
 
-| Datei | Inhalt |
+| File | Contents |
 | --- | --- |
-| [manual.md](manual.md) | Bedienungsanleitung Rev. 1.1 |
-| [dmx-channels.md](dmx-channels.md) | Kanalbelegung mit Forschungsstatus |
-| [test-notes.md](test-notes.md) | Messungen und offene Punkte |
-| [profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf](profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf) | QLC+-Fixture, Stand der installierten Definition |
+| [manual.md](manual.md) | Operating manual rev. 1.1 |
+| [dmx-channels.md](dmx-channels.md) | Channel map with research status |
+| [test-notes.md](test-notes.md) | Measurements and open points |
+| [profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf](profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf) | QLC+ fixture, matching the installed definition |
 
-## Offene Fragen
+## Open questions
 
-- [x] Netzspannung am Gehäuse lesbar (AC 90–240 V)
-- [ ] Hardware-Hersteller, Modell, Sicherungswert, Umgebungstemperatur
-- [x] DMX-Modi und Kanalzahlen bekannt (7 und 12)
-- [x] 7CH-Modus verifiziert
-- [x] 12CH CH9 Strobe-Bereiche auf Firmware V2.20 geprüft
-- [ ] 12CH Farbkanäle, Presets, Dimmer und CH10–CH12 am Gerät gegengeprüft
-- [ ] Dimmerkurven `Dinn` 1–3, Sound-Programme 1–6, Sync/CliC
-- [ ] Wireless-Pairing des verbauten Empfängers
-- [x] QLC+-Profil entspricht der installierten Definition
-- [ ] Profil mit dem Gerät gefahren
+- [x] Mains voltage readable on the housing (AC 90–240 V)
+- [ ] Hardware manufacturer, model, fuse rating, ambient temperature
+- [x] DMX modes and channel counts known (7 and 12)
+- [x] 7CH mode verified
+- [x] 12CH CH9 strobe ranges tested on firmware V2.20
+- [ ] 12CH color channels, presets, dimmer, and CH10–CH12 checked on the unit
+- [ ] `Dinn` 1–3 curves, sound programs 1–6, Sync/CliC
+- [ ] Pairing of the installed wireless receiver
+- [x] QLC+ profile matches the installed definition
+- [ ] Profile driven live against the fixture

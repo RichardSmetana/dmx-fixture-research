@@ -1,83 +1,83 @@
-# DMX-Kanalbelegung — Fixture 03 (INVOLIGHT LEDMH100)
+# DMX channel map — Fixture 03 (INVOLIGHT LEDMH100)
 
-Status-Legende: **Referenzmanual** · **Profil** · **Offen**
+Status legend: **Reference manual** · **Profile** · **Open**
 
-**Verifiziert** heißt in diesem Projekt: am Gerät getestet. Das trifft hier noch auf keinen Kanalwert zu. Der Netzaufdruck ist fotografiert, die Kanalwerte nicht.
+**Verified** in this project means tested on the unit. That does not apply to any channel value here yet. The mains print is photographed; the channel values are not.
 
-Quelle: Herstellermanual LEDMH100 und [`profiles/Involight_LEDMH100.qxf`](profiles/Involight_LEDMH100.qxf). Die ersten neun Kanäle sind in beiden Modi dieselben.
+Source: the LEDMH100 manufacturer manual and [`profiles/Involight_LEDMH100.qxf`](profiles/Involight_LEDMH100.qxf). The first nine channels are the same in both modes.
 
-## Übersicht
+## Overview
 
-| Modus | Kanäle | Name in QLC+ | Menü | Stand |
+| Mode | Channels | Name in QLC+ | Menu | Status |
 | --- | --- | --- | --- | --- |
-| 9 Channel | 9 | 9-Ch 16BT OFF | `16BT` OFF | Referenzmanual |
-| 11 Channel | 11 | 11-Ch 16BT ON | `16BT` ON | Referenzmanual |
+| 9 Channel | 9 | 9-Ch 16BT OFF | `16BT` OFF | Reference manual |
+| 11 Channel | 11 | 11-Ch 16BT ON | `16BT` ON | Reference manual |
 
-Das Herstellermanual nennt 501 als höchste Startadresse im 11-Kanal-Modus. Rechnerisch belegen 11 Kanäle ab Adresse 502 noch 502–512.
+The manufacturer manual names 501 as the highest start address in 11-channel mode. Eleven channels still fit from address 502 (502–512).
 
 ---
 
-## Gemeinsame Kanäle CH1–CH9
+## Shared channels CH1–CH9
 
-| Kanal | DMX-Wert | Funktion | Status |
+| Channel | DMX value | Function | Status |
 | --- | --- | --- | --- |
-| CH1 | 0–24 | Manuelle RGB-Steuerung | Referenzmanual |
-| CH1 | 25–49 | Programm 1 | Referenzmanual |
-| CH1 | 50–74 | Programm 2 | Referenzmanual |
-| CH1 | 75–99 | Programm 3 | Referenzmanual |
-| CH1 | 100–124 | Programm 4 | Referenzmanual |
-| CH1 | 125–149 | Programm 5 | Referenzmanual |
-| CH1 | 150–174 | Programm 6 | Referenzmanual |
-| CH1 | 175–199 | Programm 7 | Referenzmanual |
-| CH1 | 200–224 | Programm 8 | Referenzmanual |
-| CH1 | 225–255 | Sound | Referenzmanual |
-| CH2 | 0–255 | Rot, 0 aus, steigend | Referenzmanual |
-| CH3 | 0–255 | Grün, 0 aus, steigend | Referenzmanual |
-| CH4 | 0–255 | Blau, 0 aus, steigend | Referenzmanual |
-| CH5 | 0–15 | Bei CH1 0–24: kein Strobe. Bei CH1 25–224: schnellste Programmgeschwindigkeit | Referenzmanual |
-| CH5 | 16–255 | Bei CH1 0–24: Strobe schnell nach langsam. Bei CH1 25–224: Programmgeschwindigkeit schnell nach langsam | Referenzmanual |
-| CH6 | 0 | Volle RGB-Helligkeit | Referenzmanual |
-| CH6 | 255 | Schwarz | Referenzmanual |
-| CH7 | 0–255 | Pan, Profil 0–540° | Referenzmanual / Winkel aus Profil |
-| CH8 | 0–255 | Tilt, Profil 0–230° | Referenzmanual / Winkel aus Profil |
-| CH9 | 0–255 | Pan/Tilt-Geschwindigkeit, 0 am schnellsten, 255 am langsamsten | Referenzmanual |
+| CH1 | 0–24 | Manual RGB control | Reference manual |
+| CH1 | 25–49 | Program 1 | Reference manual |
+| CH1 | 50–74 | Program 2 | Reference manual |
+| CH1 | 75–99 | Program 3 | Reference manual |
+| CH1 | 100–124 | Program 4 | Reference manual |
+| CH1 | 125–149 | Program 5 | Reference manual |
+| CH1 | 150–174 | Program 6 | Reference manual |
+| CH1 | 175–199 | Program 7 | Reference manual |
+| CH1 | 200–224 | Program 8 | Reference manual |
+| CH1 | 225–255 | Sound | Reference manual |
+| CH2 | 0–255 | Red, 0 off, rising | Reference manual |
+| CH3 | 0–255 | Green, 0 off, rising | Reference manual |
+| CH4 | 0–255 | Blue, 0 off, rising | Reference manual |
+| CH5 | 0–15 | With CH1 0–24: no strobe. With CH1 25–224: fastest program speed | Reference manual |
+| CH5 | 16–255 | With CH1 0–24: strobe fast to slow. With CH1 25–224: program speed fast to slow | Reference manual |
+| CH6 | 0 | Full RGB brightness | Reference manual |
+| CH6 | 255 | Blackout | Reference manual |
+| CH7 | 0–255 | Pan, profile 0–540° | Reference manual / angle from profile |
+| CH8 | 0–255 | Tilt, profile 0–230° | Reference manual / angle from profile |
+| CH9 | 0–255 | Pan/tilt speed, 0 fastest, 255 slowest | Reference manual |
 
-CH2–CH4 wirken nur, wenn CH1 im Bereich 0–24 liegt. Laufende Programme können andere Kanäle ignorieren.
+CH2–CH4 only take effect when CH1 is in the range 0–24. Running programs can ignore other channels.
 
-CH6 ist invertiert. Ein normaler Regler von 0 nach 255 macht das Gerät dunkler. Im QLC+-Workspace kann der Modifier `Inverted` den Regler umdrehen. Die Formel ist `Ausgang = 255 − Wert`. Der Modifier steht nicht in der QXF.
+CH6 is inverted. A normal fader from 0 to 255 makes the fixture darker. In a QLC+ workspace the modifier `Inverted` can reverse the fader. The formula is `output = 255 − value`. The modifier is not in the QXF.
 
-### Beispiel: statisches Rot, ohne Modifier
+### Example: static red, without the modifier
 
 CH1 = 0, CH2 = 255, CH3 = 0, CH4 = 0, CH5 = 0, CH6 = 0, CH7 = 127, CH8 = 127, CH9 = 128.
 
-CH6 muss 0 sein, sonst ist das Licht nicht voll.
+CH6 must be 0, otherwise the light is not full.
 
-Mit aktivem Modifier `Inverted` den CH6-Regler auf 255 stellen. QLC+ sendet dann 0, sofern Grand Master und andere Ausgänge nicht weiter skalieren.
+With the modifier `Inverted` active, set the CH6 fader to 255. QLC+ then sends 0, unless Grand Master or another output scales the value further.
 
-### Beispiel Programm 1
+### Example: program 1
 
 CH1 = 37, CH5 = 128.
 
-### Beispiel Sound
+### Example: sound
 
 CH1 = 240.
 
 ---
 
-## Zusätzliche Kanäle im 11-Kanal-Modus
+## Extra channels in 11-channel mode
 
-Nur bei `16BT` ON. Im 9-Kanal-Modus gibt es diese Kanäle nicht.
+Only with `16BT` ON. These channels do not exist in 9-channel mode.
 
-| Kanal | DMX-Wert | Funktion | Status |
+| Channel | DMX value | Function | Status |
 | --- | --- | --- | --- |
-| CH10 | 0–255 | Pan fein | Referenzmanual |
-| CH11 | 0–255 | Tilt fein | Referenzmanual |
+| CH10 | 0–255 | Pan fine | Reference manual |
+| CH11 | 0–255 | Tilt fine | Reference manual |
 
-Für eine grobe Mitte zusätzlich CH10 und CH11 auf etwa 128.
+For a coarse center, also set CH10 and CH11 to about 128.
 
-### Besonderheiten
+### Notes
 
-- CH5 läuft beim Strobe von schnell nach langsam, nicht umgekehrt.
-- CH9 ebenso: 0 schnell, 255 langsam.
-- Die Bereiche von CH1 und CH5 decken 0–255 lückenlos ab.
-- Pan- und Tilt-Richtung hängen an `r PAN`, `R TILT` und `r-PT`.
+- CH5 strobe runs from fast to slow.
+- CH9 is the same: 0 fast, 255 slow.
+- The ranges of CH1 and CH5 cover 0–255 with no gap.
+- Pan and tilt direction depend on `r PAN`, `R TILT`, and `r-PT`.

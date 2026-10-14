@@ -1,9 +1,9 @@
 # Profiles — Fixture 03
 
-| Datei | Format | Inhalt |
+| File | Format | Contents |
 | --- | --- | --- |
-| [Involight_LEDMH100.qxf](Involight_LEDMH100.qxf) | QLC+ 5.2.1 | Installierte Definition. Feld `Manufacturer`: `dmx-fixture-research`. Modell: `Involight LEDMH100`. Modi `9-Ch 16BT OFF` und `11-Ch 16BT ON`. CH6 ist der invertierte RGB-Dimmer. 160 W, 528 lm, Pan 540°, Tilt 230°, 23°. |
+| [Involight_LEDMH100.qxf](Involight_LEDMH100.qxf) | QLC+ 5.2.1 | Installed definition. `Manufacturer` field: `dmx-fixture-research`. Model: `Involight LEDMH100`. Modes `9-Ch 16BT OFF` and `11-Ch 16BT ON`. CH6 is the inverted RGB dimmer. 160 W, 528 lm, pan 540°, tilt 230°, 23°. |
 
-Der Modifier `Inverted` für einen normalen Helligkeitsregler liegt nicht in dieser Datei. Er wird im QLC+-Workspace auf CH6 gesetzt.
+The modifier `Inverted` for a normal brightness fader is not in this file. Set it on CH6 in the QLC+ workspace.
 
-Open Fixture Library (`.json`) liegt noch nicht vor.
+An Open Fixture Library (`.json`) file is not included yet.

@@ -1,56 +1,56 @@
-# Testnotizen — Fixture 04 (LED PAR 36× RGB, DIP)
+# Test notes — Fixture 04 (LED PAR 36× RGB, DIP)
 
-## Testumgebung
+## Test setup
 
-| Feld | Wert |
+| Field | Value |
 | --- | --- |
-| Datum | 2026-10-14 |
-| Controller / Software | QLC+ 5.2.1 (Profil). Interface nicht protokolliert |
-| DMX-Interface | |
-| Adresse | 1, nur DIP 1 ein, DIP 2–10 aus |
+| Date | 2026-10-14 |
+| Controller / software | QLC+ 5.2.1 (profile). Interface not logged |
+| DMX interface | |
+| Address | 1, only DIP 1 ON, DIP 2–10 OFF |
 | Firmware | |
-| Exemplar | kein Typenschild |
+| Unit | No rating label |
 
-## Getestete Werte
+## Values tested
 
-| Datum | Modus | Kanal | Wert(e) | Beobachtung | Status |
+| Date | Mode | Channel | Value(s) | Observation | Status |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-14 | 8CH | CH1–CH3 | 0–255 | Rot, Grün, Blau | Verifiziert |
-| 2026-10-14 | 8CH | CH4 | 0–255 | Farbwahl. Grenzen der einzelnen Farben offen | Verifiziert |
-| 2026-10-14 | 8CH | CH4 | 0–255 bei CH6 128–255 | Tempo der Überblendung. Richtung offen | Verifiziert |
-| 2026-10-14 | 8CH | CH6 | 0, 16, 32, 64, 96, 97, 104, 111, 112, 119, 120, 124, 127 | Farbwechsel | Verifiziert |
-| 2026-10-14 | 8CH | CH6 | 128, 160, 192, 224, 255 | Farbüberblendung. Frühere Notiz „nur Rot wird heller“ gehört in diesen Bereich | Verifiziert |
-| 2026-10-14 | 8CH | CH7 | 0–255 bei CH6 0–127 | Tempo des Farbwechsels. Richtung offen | Verifiziert |
-| 2026-10-14 | 8CH | CH8 | 0 und 255 | 0 aus, 255 voll | Verifiziert |
+| 2026-10-14 | 8CH | CH1–CH3 | 0–255 | Red, green, blue | Verified |
+| 2026-10-14 | 8CH | CH4 | 0–255 | Color selection. Boundaries of the individual colors open | Verified |
+| 2026-10-14 | 8CH | CH4 | 0–255 with CH6 128–255 | Fade speed. Direction open | Verified |
+| 2026-10-14 | 8CH | CH6 | 0, 16, 32, 64, 96, 97, 104, 111, 112, 119, 120, 124, 127 | Color change | Verified |
+| 2026-10-14 | 8CH | CH6 | 128, 160, 192, 224, 255 | Color fading. An earlier note “only red gets brighter” belongs in this range | Verified |
+| 2026-10-14 | 8CH | CH7 | 0–255 with CH6 0–127 | Color-change speed. Direction open | Verified |
+| 2026-10-14 | 8CH | CH8 | 0 and 255 | 0 off, 255 full | Verified |
 
-## Gesichert
+## Confirmed
 
-- 8 Kanäle. Reihenfolge Rot, Grün, Blau, Farbe/Fade-Tempo, Strobe, Effekt, Wechseltempo, Master.
-- CH6-Grenze bei 128. Darunter Wechsel mit Tempo auf CH7, darüber Fade mit Tempo auf CH4.
-- CH8 nicht invertiert.
-- Rückseite: CE, AUTO, MUSIC, SPEED, grüne Signallampe, 10 DIP-Schalter, DMX IN mit `1:G` `2:-` `3:+`, DMX OUT, AC90–250V, festes Netzkabel.
-- Adresse 1 über DIP 1.
+- 8 channels. Order: red, green, blue, color/fade speed, strobe, effect, change speed, master.
+- CH6 boundary at 128. Below it, color change with speed on CH7. Above it, fade with speed on CH4.
+- CH8 is not inverted.
+- Rear: CE, AUTO, MUSIC, SPEED, green signal lamp, 10 DIP switches, DMX IN printed `1:G` `2:-` `3:+`, DMX OUT, AC90–250V, fixed mains cable.
+- Address 1 through DIP 1.
 
-## Vermutet
+## Suspected
 
-- DIP 2–9 als Binäradresse 2, 4, 8, 16, 32, 64, 128, 256.
-- CH5: 0–15 kein Strobe, 16–255 Strobe. Steht so in der QXF und ist nicht gemessen.
+- DIP 2–9 as a binary address: 2, 4, 8, 16, 32, 64, 128, 256.
+- CH5: 0–15 no strobe, 16–255 strobe. That is how the QXF is written, and it was not measured.
 
-## Unbekannt / offen
+## Unknown / open
 
-- Hersteller, Modell, Seriennummer.
-- Richtung von CH4-Fade-Tempo und CH7-Wechseltempo.
-- Farbgrenzen auf CH4 und das Zusammenspiel mit CH1–CH3.
-- Ob irgendwo innerhalb 0–127 oder 128–255 noch ein zweites Merkmal steckt.
-- Ein Wert, der die Automatik abschaltet. CH6 = 0 tut das nicht.
+- Manufacturer, model, serial number.
+- Direction of the CH4 fade speed and the CH7 color-change speed.
+- Color boundaries on CH4 and how they interact with CH1–CH3.
+- Whether any value inside 0–127 or 128–255 changes a second behavior.
+- A value that turns automatic effects off. CH6 = 0 does not.
 - DIP 10.
-- Ablauf von AUTO, MUSIC und dem SPEED-Regler, und ob SPEED dieselben Tempi wie CH4/CH7 ist.
-- 20 W, 1,5 kg, 200 mm Würfel, 15°. Nur Profil.
+- Sequence of AUTO, MUSIC, and the SPEED knob, and whether SPEED is the same timing as CH4/CH7.
+- 20 W, 1.5 kg, 200 mm cube, 15°. Profile only.
 
-## Unterschiede zwischen Exemplaren
+## Differences between units
 
 -
 
-## Linked Issues
+## Linked issues
 
 -

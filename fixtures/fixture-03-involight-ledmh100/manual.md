@@ -1,130 +1,130 @@
 # INVOLIGHT LEDMH100
 
-## LED Moving Head
+## LED moving head
 
-| Feld | Wert |
+| Field | Value |
 | --- | --- |
-| Dokumentation | dmx-fixture-research |
-| Hardware-Hersteller | INVOLIGHT |
-| Modell | LEDMH100 |
-| Typ | RGB-LED-Moving-Head |
-| DMX-Modi | 9 / 11 |
+| Documentation | dmx-fixture-research |
+| Hardware manufacturer | INVOLIGHT |
+| Model | LEDMH100 |
+| Type | RGB LED moving head |
+| DMX modes | 9 / 11 |
 | QLC+ | 5.2.1 |
-| Dokumentationsstand | 1.0 – Oktober 2026 |
+| Documentation | 1.0 — October 2026 |
 
-Profil: [`profiles/Involight_LEDMH100.qxf`](profiles/Involight_LEDMH100.qxf). Kanäle: [dmx-channels.md](dmx-channels.md). Fotos: [photos/](photos/).
+Profile: [`profiles/Involight_LEDMH100.qxf`](profiles/Involight_LEDMH100.qxf). Channels: [dmx-channels.md](dmx-channels.md). Photos: [photos/](photos/).
 
-Grundlage ist das 12-seitige Herstellermanual und die QLC+-Datei dieses Projekts. Kanalwerte sind nicht am Gerät gemessen. Der Netzaufdruck ist fotografiert.
+The basis is the 12-page manufacturer manual and the QLC+ file in this project. Channel values have not been measured on the unit. The mains print is photographed.
 
-**CH6 ist invertiert.** DMX 0 ist volle Helligkeit, 255 ist aus.
+**CH6 is inverted.** DMX 0 is full brightness, 255 is off.
 
-Herstellermanual, nur verlinkt:
+Manufacturer manual, linked only:
 
 - https://www.manualslib.com/manual/1108857/Involight-Ledmh100.html
 - https://manualzz.com/doc/7012116/involight-ledmh100-led-moving-head-user-manual
 
 ---
 
-## 1. Gerät
+## 1. The fixture
 
-36 × 1 W LEDs, RGB, motorischer Pan und Tilt, acht Programme, Sound, DMX512. Auf dem Foto ein Feld einzelner LED-Optiken. Die Zahl 36 ist nicht nachgezählt.
+36 × 1 W LEDs, RGB, motorized pan and tilt, eight programs, sound, DMX512. The photo shows a field of individual LED optics. The count of 36 was not made from the photo.
 
-`16BT` OFF: 9 Kanäle, 8-bit Pan/Tilt. `16BT` ON: 11 Kanäle, dazu Pan-fein und Tilt-fein. Die ersten neun Kanäle bleiben gleich.
-
----
-
-## 2. Sicherheit
-
-Nur innen. Nicht Regen oder Feuchtigkeit. Nur an einen passenden, geerdeten Stromkreis. Vor Service trennen. Nicht in die LEDs sehen. Lüftung freihalten. Nicht an einen Netzdimmer. Nicht mit beschädigtem Gehäuse betreiben.
-
-Maximum nach Manual: **40 °C**.
-
-Der Kopf fährt beim Start von selbst. Nicht in den Fahrweg greifen und den Kopf nicht unter Spannung von Hand drücken.
-
-Über Kopf: tragfähige Konstruktion, Schelle, separates Sicherungsseil, Freiraum für Pan und Tilt, Abstand zu Vorhängen und Brennbaren.
+`16BT` OFF: 9 channels, 8-bit pan/tilt. `16BT` ON: 11 channels, plus pan fine and tilt fine. The first nine channels stay the same.
 
 ---
 
-## 3. Technische Daten
+## 2. Safety
 
-| Größe | Wert | Quelle |
+Indoor only. No rain or moisture. Connect only to a suitable grounded circuit. Disconnect before service. Do not look into the LEDs. Keep ventilation clear. Do not connect it to a mains dimmer. Do not operate it with a damaged housing.
+
+Maximum from the manual: **40 °C**.
+
+The head moves by itself at startup. Do not reach into the travel path, and do not push the head by hand while it is powered.
+
+Overhead: a load-rated structure, a clamp, a separate safety cable, clearance for pan and tilt, and distance from curtains and combustibles.
+
+---
+
+## 3. Technical data
+
+| Item | Value | Source |
 | --- | --- | --- |
-| LEDs | 36 × 1 W, RGB | Herstellerdoku |
-| Pan / Tilt | 540° / 230° | Herstellerdoku und QXF |
-| Winkel | 23° | QXF |
-| Lichtstrom | etwa 528 lm | Herstellerdoku und QXF |
-| Leistung | 160 W | Herstellerdoku und QXF |
-| Netz | AC IN 220V 50Hz, Schalter | Foto |
-| Gewicht | 7 kg | Herstellerdoku und QXF |
-| Maße | 220 × 376 × 250 mm | Herstellerdoku und QXF |
-| Umgebung | max. 40 °C | Herstellerdoku |
-| DMX | 3-pin, IN und OUT | Foto |
+| LEDs | 36 × 1 W, RGB | Manufacturer documentation |
+| Pan / tilt | 540° / 230° | Manufacturer documentation and QXF |
+| Beam angle | 23° | QXF |
+| Luminous flux | About 528 lm | Manufacturer documentation and QXF |
+| Power | 160 W | Manufacturer documentation and QXF |
+| Mains | AC IN 220V 50Hz, switch | Photo |
+| Weight | 7 kg | Manufacturer documentation and QXF |
+| Dimensions | 220 × 376 × 250 mm | Manufacturer documentation and QXF |
+| Ambient | Maximum 40 °C | Manufacturer documentation |
+| DMX | 3-pin, IN and OUT | Photo |
 
-160 W ist die Herstellerangabe zum ganzen Gerät, nicht die Summe der LED-Nennleistung. Maße, Gewicht, Winkel und Lumen sind nicht nachgemessen. Die Spannung 220 V 50 Hz steht auf dem Sockel.
+160 W is the manufacturer’s rating for the whole fixture, not the sum of the LED ratings. Dimensions, weight, beam angle, and lumens have not been remeasured. The voltage 220 V 50 Hz is printed on the base.
 
 ---
 
-## 4. Anschluss
+## 4. Connections
 
-1. Gerät sichern.
-2. Netz an AC IN. Aufdruck: 220V 50Hz. Ein Schalter sitzt daneben.
-3. Einschalten und die Initialfahrt abwarten.
+1. Secure the fixture.
+2. Connect mains to AC IN. Print: 220V 50Hz. A switch sits next to it.
+3. Switch on and wait for the initialization move.
 
-DMX, Standardbelegung aus dem Manual, nicht auf dem Gehäuse aufgedruckt:
+DMX, standard pinout from the manual, not printed on the housing:
 
 | Pin | Signal |
 | --- | --- |
-| 1 | Masse / Schirm |
+| 1 | Ground / shield |
 | 2 | Data − |
 | 3 | Data + |
 
-Kette: Konsole, dann DMX IN, weiter über DMX OUT. Am Ende bei Bedarf 120 Ohm.
+Chain: console, then DMX IN, onward through DMX OUT. Terminate with 120 ohm if needed.
 
-### Adressen
+### Addresses
 
-11 Kanäle, Beispiele:
+11 channels, examples:
 
-| Gerät | Start | Kanäle |
+| Fixture | Start | Channels |
 | --- | --- | --- |
 | 1 | 001 | 1–11 |
 | 2 | 012 | 12–22 |
 | 3 | 023 | 23–33 |
 | 4 | 034 | 34–44 |
 
-9 Kanäle: 001, 010, 019, 028.
+9 channels: 001, 010, 019, 028.
 
-Das Herstellermanual nennt 501 als höchste Startadresse im 11-Kanal-Modus. 11 Kanäle passen rechnerisch noch ab 502.
+The manufacturer manual names 501 as the highest start address in 11-channel mode. Eleven channels still fit from 502.
 
 ---
 
-## 5. Bedienfeld
+## 5. Control panel
 
-Die Anzeige ist 4-stellig, siehe [photos/base-display.jpg](photos/base-display.jpg). Die Tastennamen stammen aus dem Manual, nicht aus einer Nahaufnahme.
+The display is 4 digits, see [photos/base-display.jpg](photos/base-display.jpg). The button names come from the manual, not from a close photo.
 
-| Taste | Funktion |
+| Button | Function |
 | --- | --- |
-| FUN | Menü / zurück |
-| UP | höher / weiter |
-| DOWN | tiefer / zurück |
-| ENTER | wählen / speichern |
+| FUN | Menu / back |
+| UP | Higher / next |
+| DOWN | Lower / previous |
+| ENTER | Select / save |
 
-| Menü | Wert | Funktion |
+| Menu | Value | Function |
 | --- | --- | --- |
-| Adresse | 001–501 im 11-Kanal-Hinweis | Startadresse |
+| Address | 001–501 in the 11-channel note | Start address |
 | MODE | `M-DM` | DMX |
-| MODE | `M-AU` | Automatik |
+| MODE | `M-AU` | Automatic |
 | MODE | `M-SO` | Sound |
-| PRCO | `PR1`–`PR8` | Programm |
-| SPCO | `SP01`–`SP15` | Programmtempo, etwa 0,1 s bis 10 s je Schritt |
-| r PAN | STND / REV | Pan-Richtung |
-| R TILT | STND / REV | Tilt-Richtung |
-| r-PT | STND / REV | Pan und Tilt zusammen |
-| TEST | ALL, PAN, TITL, RED, GREEN, BLUE | Selbsttest. Der Kopf kann fahren |
+| PRCO | `PR1`–`PR8` | Program |
+| SPCO | `SP01`–`SP15` | Program speed, about 0.1 s to 10 s per step |
+| r PAN | STND / REV | Pan direction |
+| R TILT | STND / REV | Tilt direction |
+| r-PT | STND / REV | Pan and tilt together |
+| TEST | ALL, PAN, TITL, RED, GREEN, BLUE | Self-test. The head can move |
 | DISP | STND / REV | Display |
-| REST | ON | Reset. Motoren können fahren |
-| 16BT | ON / OFF | 11 oder 9 Kanäle |
+| REST | ON | Reset. Motors can move |
+| 16BT | ON / OFF | 11 or 9 channels |
 
-PR1–PR4 sind im Manual Schrittprogramme, PR5–PR8 Überblendungen. Die genauen Folgen sind nicht aufgeschrieben.
+In the manual, PR1–PR4 are step programs and PR5–PR8 are fades. The exact sequences are not written down.
 
 ---
 
@@ -132,125 +132,125 @@ PR1–PR4 sind im Manual Schrittprogramme, PR5–PR8 Überblendungen. Die genaue
 
 ### CH1
 
-| Wert | Funktion |
+| Value | Function |
 | --- | --- |
-| 0–24 | RGB manuell |
-| 25–49 | Programm 1 |
-| 50–74 | Programm 2 |
-| 75–99 | Programm 3 |
-| 100–124 | Programm 4 |
-| 125–149 | Programm 5 |
-| 150–174 | Programm 6 |
-| 175–199 | Programm 7 |
-| 200–224 | Programm 8 |
+| 0–24 | Manual RGB |
+| 25–49 | Program 1 |
+| 50–74 | Program 2 |
+| 75–99 | Program 3 |
+| 100–124 | Program 4 |
+| 125–149 | Program 5 |
+| 150–174 | Program 6 |
+| 175–199 | Program 7 |
+| 200–224 | Program 8 |
 | 225–255 | Sound |
 
 ### CH2–CH4
 
-Rot, Grün, Blau. 0 aus, 255 voll. Nur wirksam, wenn CH1 zwischen 0 und 24 liegt.
+Red, green, blue. 0 off, 255 full. Effective only when CH1 is between 0 and 24.
 
 ### CH5
 
-Hängt von CH1 ab.
+Depends on CH1.
 
-Bei manueller RGB (CH1 0–24): 0–15 kein Strobe, 16 schnell, 255 langsam.
+With manual RGB (CH1 0–24): 0–15 no strobe, 16 fast, 255 slow.
 
-Bei Programm (CH1 25–224): 0 am schnellsten, 255 am langsamsten.
+With a program (CH1 25–224): 0 fastest, 255 slowest.
 
 ### CH6
 
-| Wert | Helligkeit |
+| Value | Brightness |
 | --- | --- |
-| 0 | 100 % |
-| 64 | etwa 75 % |
-| 128 | etwa 50 % |
-| 192 | etwa 25 % |
-| 255 | aus |
+| 0 | 100% |
+| 64 | About 75% |
+| 128 | About 50% |
+| 192 | About 25% |
+| 255 | Off |
 
-Das ist das Hardware-Verhalten. Die QXF beschreibt es so und dreht den Kanal nicht um.
+That is the hardware behavior. The QXF describes it and does not invert the channel itself.
 
 ### CH7–CH9
 
-Pan 0–540°, Tilt 0–230°, Geschwindigkeit 0 schnell bis 255 langsam. Richtung über das Menü.
+Pan 0–540°, tilt 0–230°, speed 0 fast to 255 slow. Direction through the menu.
 
-### CH10 und CH11
+### CH10 and CH11
 
-Nur im 11-Kanal-Modus. Pan fein und Tilt fein.
+Only in 11-channel mode. Pan fine and tilt fine.
 
-### Beispiele
+### Examples
 
-Rot ohne Modifier: CH1 = 0, CH2 = 255, CH3 = 0, CH4 = 0, CH5 = 0, CH6 = 0, CH7 = 127, CH8 = 127, CH9 = 128. Im 11-Kanal-Modus CH10 und CH11 etwa 128.
+Red without the modifier: CH1 = 0, CH2 = 255, CH3 = 0, CH4 = 0, CH5 = 0, CH6 = 0, CH7 = 127, CH8 = 127, CH9 = 128. In 11-channel mode, set CH10 and CH11 to about 128.
 
-Mit Modifier `Inverted`: denselben Regler für CH6 auf 255 stellen. QLC+ sendet 0, solange kein weiterer Ausgang den Wert nochmal skaliert.
+With the modifier `Inverted`: set the same CH6 fader to 255. QLC+ sends 0 as long as no further output scales the value again.
 
-Programm 1: CH1 = 37, CH5 = 128.
+Program 1: CH1 = 37, CH5 = 128.
 
 Sound: CH1 = 240.
 
 ---
 
-## 7. Invertierter Dimmer in QLC+
+## 7. Inverted dimmer in QLC+
 
-Ohne Korrektur wird der Schieber nach oben dunkler.
+Without the correction, the fader gets darker as it moves up.
 
-`Ausgang = 255 − Reglerwert`
+`output = 255 − fader value`
 
-| Regler | DMX | Helligkeit |
+| Fader | DMX | Brightness |
 | --- | --- | --- |
-| 0 | 255 | 0 % |
-| 64 | 191 | etwa 25 % |
-| 128 | 127 | etwa 50 % |
-| 192 | 63 | etwa 75 % |
-| 255 | 0 | 100 % |
+| 0 | 255 | 0% |
+| 64 | 191 | About 25% |
+| 128 | 127 | About 50% |
+| 192 | 63 | About 75% |
+| 255 | 0 | 100% |
 
-In QLC+ 5: Fixture Manager, LEDMH100, Kanaleigenschaften, CH6, Modifier `Inverted`, Workspace speichern. Bei mehreren gleichen Geräten die Änderung auf denselben Typ anwenden.
+In QLC+ 5: Fixture Manager, LEDMH100, channel properties, CH6, modifier `Inverted`, save the workspace. With several identical fixtures, apply the change to the same type.
 
-Der Modifier liegt im Workspace, nicht in der `.qxf`. Import allein dreht den Regler nicht um. Danach Szenen, Überblendungen, Blackout und Grand Master am Gerät prüfen.
+The modifier lives in the workspace, not in the `.qxf`. Import alone does not reverse the fader. After that, check scenes, fades, blackout, and Grand Master on the fixture.
 
-QLC+-Doku: https://docs.qlcplus.org/v5/fixture-manager/channel-properties
-
----
-
-## 8. Master/Slave
-
-Ohne Konsole: DMX-Kette, ein Gerät auf `M-AU` oder `M-SO`, die übrigen auf `M-DM` mit Adresse 001. Keine Konsole an dieser Kette. Nur ein Master. Am Exemplar nicht geprüft.
+QLC+ documentation: https://docs.qlcplus.org/v5/fixture-manager/channel-properties
 
 ---
 
-## 9. Fehlersuche
+## 8. Master/slave
 
-| Problem | Prüfung |
+Without a console: a DMX chain, one fixture on `M-AU` or `M-SO`, the others on `M-DM` with address 001. No console on that chain. Only one master. Not tested on this unit.
+
+---
+
+## 9. Troubleshooting
+
+| Problem | What to check |
 | --- | --- |
-| Startet nicht | Netz, Schalter, Sicherung |
-| Kein DMX | Adresse, Kabel, Modus `M-DM`, passendes `16BT` |
-| Bleibt dunkel | CH6 auf 0, CH1 auf 0–24 |
-| Heller Regler macht dunkler | Modifier `Inverted` fehlt |
-| Kein RGB | CH1 nicht im Bereich 0–24 |
-| Unerwartete Programme | CH1 über 24 |
-| Schnelles Blitzen | CH5 über 15 |
-| Falsche Richtung | `r PAN`, `R TILT`, `r-PT` |
-| Slave folgt nicht | `M-DM` und Adresse 001 |
+| Does not start | Mains, switch, fuse |
+| No DMX | Address, cable, mode `M-DM`, matching `16BT` |
+| Stays dark | CH6 at 0, CH1 at 0–24 |
+| A brighter fader makes it darker | Modifier `Inverted` is missing |
+| No RGB | CH1 is not in the range 0–24 |
+| Unexpected programs | CH1 above 24 |
+| Fast flashing | CH5 above 15 |
+| Wrong direction | `r PAN`, `R TILT`, `r-PT` |
+| Slave does not follow | `M-DM` and address 001 |
 
-Bei blockierter Mechanik anhalten und spannungsfrei prüfen.
-
----
-
-## 10. Wartung
-
-Netz trennen, abkühlen lassen. Kabel, Aufhängung, Sicherungsseil, Lüftung, Lüfter, Optik und Fahrweg prüfen. Staub außen entfernen, keine scharfen Mittel. Motor, Riemen und Elektrik nur durch geeignetes Personal.
+Stop and disconnect power if the mechanism is blocked.
 
 ---
 
-## 11. Was geprüft ist
+## 10. Maintenance
 
-| Punkt | Stand |
+Disconnect mains power and let it cool. Check cables, rigging, the safety cable, ventilation, fans, optics, and the travel path. Remove dust from the outside. Do not use harsh cleaners. Leave motors, belts, and electrics to qualified personnel.
+
+---
+
+## 11. What has been checked
+
+| Item | Status |
 | --- | --- |
-| AC IN 220V 50Hz, Schalter, DMX IN/OUT | Foto |
-| 9/11 Kanäle, CH1–CH6, invertierter Dimmer | Herstellerdoku, deckungsgleich mit der QXF |
-| Pan 540°, Tilt 230°, 160 W, 528 lm, 23° | Herstellerdoku und QXF, nicht gemessen |
-| Modifier `Inverted` | Nur Anleitung, nicht im Workspace geprüft |
-| Kanalwerte am Exemplar | Offen |
+| AC IN 220V 50Hz, switch, DMX IN/OUT | Photo |
+| 9/11 channels, CH1–CH6, inverted dimmer | Manufacturer documentation, matching the QXF |
+| Pan 540°, tilt 230°, 160 W, 528 lm, 23° | Manufacturer documentation and QXF, not measured |
+| Modifier `Inverted` | Instructions only, not checked in a workspace |
+| Channel values on this unit | Open |
 
 ---
 
-*Ende der Anleitung – Revision 1.0*
+*End of manual — revision 1.0*

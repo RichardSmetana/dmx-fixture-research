@@ -1,59 +1,59 @@
-# DMX-Kanalbelegung — Fixture 02 (U'King ZQ00245001)
+# DMX channel map — Fixture 02 (U'King ZQ00245001)
 
-Status-Legende: **Referenzmanual** · **Profil** · **Offen**
+Status legend: **Reference manual** · **Profile** · **Open**
 
-**Verifiziert** im Sinn dieses Projekts heißt: am Gerät getestet. Das trifft hier noch auf keinen Kanal zu.
+**Verified** in this project means tested on the unit. That does not apply to any channel here yet.
 
-Quelle: öffentliches Pocket-Moving-Light-Manual und QLC+-Profil [`profiles/ZQ00245001-15CH.qxf`](profiles/ZQ00245001-15CH.qxf). Modusname in QLC+: `15 Channel`. Die fünfzehn Positionen stimmen in Manual und Profil überein.
+Source: the public pocket-moving-light manual and the QLC+ profile [`profiles/ZQ00245001-15CH.qxf`](profiles/ZQ00245001-15CH.qxf). Mode name in QLC+: `15 Channel`. The fifteen positions match in the manual and the profile.
 
-## Übersicht
+## Overview
 
-| Modus | Kanäle | Name in QLC+ | Menü | Stand |
+| Mode | Channels | Name in QLC+ | Menu | Status |
 | --- | --- | --- | --- | --- |
-| 15 Channel | 15 | 15 Channel | `CH15` | Referenzmanual, nicht am Gerät gemessen |
+| 15 Channel | 15 | 15 Channel | `CH15` | Reference manual, not measured on the unit |
 
-Höchste Startadresse für den vollen Modus: 498.
+Highest start address for the full mode: 498.
 
 ---
 
-## Modus: 15 Channel
+## Mode: 15 Channel
 
-| Kanal | DMX-Wert | Funktion | Status |
+| Channel | DMX value | Function | Status |
 | --- | --- | --- | --- |
-| CH1 | 0–255 | Pan, horizontal. Profil: 0–540° | Referenzmanual / Winkel aus Profil |
-| CH2 | 0–255 | Pan fein | Referenzmanual |
-| CH3 | 0–255 | Tilt, vertikal. Profil: 0–220° | Referenzmanual / Winkel aus Profil |
-| CH4 | 0–255 | Tilt fein | Referenzmanual |
-| CH5 | 0–255 | Pan/Tilt-Geschwindigkeit. Profil: schnell nach langsam | Kanal: Referenzmanual. Richtung: Profil |
-| CH6 | 0 | Master-Dimmer, Minimum | Referenzmanual |
-| CH6 | 1–254 | Helligkeit steigend | Referenzmanual |
-| CH6 | 255 | Maximum | Referenzmanual |
-| CH7 | 0–255 | Strobe. Profil: langsam nach schnell. Keine Offen-/Zu-Bereiche dokumentiert | Kanal: Referenzmanual. Richtung: Profil. Einzelwerte: Offen |
-| CH8 | 0–255 | Rot, 0–100 % | Referenzmanual |
-| CH9 | 0–255 | Grün, 0–100 % | Referenzmanual |
-| CH10 | 0–255 | Blau, 0–100 % | Referenzmanual |
-| CH11 | 0–255 | Weiß, 0–100 % | Referenzmanual |
-| CH12 | 0–255 | Grüner Laser. Manual: Dimmen. Profil: Intensität / Ein. Ob stufenlos oder mit Schwelle, ist offen | Referenzmanual / Profil. Verhalten: Offen |
-| CH13 | 0–30 | Kein Programm | Referenzmanual |
-| CH13 | 31–127 | Automatikprogramm 1 | Referenzmanual |
-| CH13 | 128–249 | Automatikprogramm 2 | Referenzmanual |
-| CH13 | 250–255 | Sound | Referenzmanual |
-| CH14 | 0–4 | LED-Ring aus | Referenzmanual |
-| CH14 | 5–109 | Farbwahl des Rings. Einzelne Farben nicht zugeordnet | Referenzmanual. Farbwerte: Offen |
-| CH14 | 110–255 | Automatische Ringeffekte | Referenzmanual. Einzelbereiche: Offen |
-| CH15 | 0–249 | Keine Funktion | Referenzmanual |
-| CH15 | 250–255 | Reset. Profil: 5 s halten. Das Manual bestätigt die Zeit nicht | Bereich: Referenzmanual. Haltedauer: Profil, Offen |
+| CH1 | 0–255 | Pan, horizontal. Profile: 0–540° | Reference manual / angle from profile |
+| CH2 | 0–255 | Pan fine | Reference manual |
+| CH3 | 0–255 | Tilt, vertical. Profile: 0–220° | Reference manual / angle from profile |
+| CH4 | 0–255 | Tilt fine | Reference manual |
+| CH5 | 0–255 | Pan/tilt speed. Profile: fast to slow | Channel: reference manual. Direction: profile |
+| CH6 | 0 | Master dimmer, minimum | Reference manual |
+| CH6 | 1–254 | Brightness rising | Reference manual |
+| CH6 | 255 | Maximum | Reference manual |
+| CH7 | 0–255 | Strobe. Profile: slow to fast. No open or closed ranges documented | Channel: reference manual. Direction: profile. Individual values: open |
+| CH8 | 0–255 | Red, 0–100% | Reference manual |
+| CH9 | 0–255 | Green, 0–100% | Reference manual |
+| CH10 | 0–255 | Blue, 0–100% | Reference manual |
+| CH11 | 0–255 | White, 0–100% | Reference manual |
+| CH12 | 0–255 | Green laser. Manual: dimming. Profile: intensity / on. Whether it is continuous or has a threshold is open | Reference manual / profile. Behavior: open |
+| CH13 | 0–30 | No program | Reference manual |
+| CH13 | 31–127 | Automatic program 1 | Reference manual |
+| CH13 | 128–249 | Automatic program 2 | Reference manual |
+| CH13 | 250–255 | Sound | Reference manual |
+| CH14 | 0–4 | LED ring off | Reference manual |
+| CH14 | 5–109 | Ring color selection. Individual colors not assigned | Reference manual. Color values: open |
+| CH14 | 110–255 | Automatic ring effects | Reference manual. Individual ranges: open |
+| CH15 | 0–249 | No function | Reference manual |
+| CH15 | 250–255 | Reset. Profile: hold 5 s. The manual does not confirm the time | Range: reference manual. Hold time: profile, open |
 
-### Beispiel: statisches Rot, Laser aus
+### Example: static red, laser off
 
 CH1–CH4 = 128, CH5 = 128, CH6 = 255, CH7 = 0, CH8 = 255, CH9–CH15 = 0.
 
-CH7 = 0 ist nur ein Testwert. Das Manual sagt nicht, ob 0 Dauerlicht oder dunkel ist.
+CH7 = 0 is only a test value. The manual does not say whether 0 is open light or dark.
 
-### Besonderheiten
+### Notes
 
-- CH6 dimmt die RGBW-Hauptlichtquelle. Der LED-Ring liegt auf CH14.
-- CH12 bei der ersten Prüfung auf 0 lassen. Laserschutzklasse unbekannt. Nicht in Personen, Fahrzeuge, Luftfahrzeuge oder spiegelnde Flächen richten. Nicht zum Audience-Scanning verwenden.
-- Ein aktives Programm auf CH13 kann andere Kanäle übersteuern. Das Zusammenspiel ist nicht geprüft.
-- CH15 im Normalbetrieb unter 250 lassen. Der Kopf kann beim Reset fahren.
-- Die Bereiche jedes Kanals decken 0–255 lückenlos ab.
+- CH6 dims the RGBW main source. The LED ring is on CH14.
+- Leave CH12 at 0 for the first check. Laser class unknown. Do not aim it at people, vehicles, aircraft, or reflective surfaces. Do not use it for audience scanning.
+- An active program on CH13 can override other channels. That interaction has not been tested.
+- Keep CH15 below 250 in normal use. The head can move during a reset.
+- Each channel’s ranges cover 0–255 with no gap.

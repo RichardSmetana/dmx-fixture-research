@@ -1,84 +1,84 @@
 # Fixture 03 — INVOLIGHT LEDMH100
 
-| Feld | Wert |
+| Field | Value |
 | --- | --- |
 | ID | `fixture-03-involight-ledmh100` |
-| Typ | LED Moving Head, RGB |
-| Profil-Hersteller | dmx-fixture-research |
-| Hardware-Hersteller / Modell | INVOLIGHT LEDMH100 |
-| Forschungsstand | In Untersuchung |
-| DMX-Modi | 9 Kanäle bei `16BT` OFF, 11 Kanäle bei `16BT` ON. Aus der Herstellerdoku, nicht am Gerät gemessen |
+| Type | LED moving head, RGB |
+| Profile manufacturer | dmx-fixture-research |
+| Hardware manufacturer / model | INVOLIGHT LEDMH100 |
+| Research status | In progress |
+| DMX modes | 9 channels with `16BT` OFF, 11 channels with `16BT` ON. From the manufacturer documentation, not measured on the unit |
 | Firmware | |
-| Versorgung | Aufdruck am Sockel: AC IN 220V 50Hz. Leistung 160 W nur in Manual und Profil |
-| Exemplare im Bestand | — |
-| Dokumentationsstand | [Anleitung Rev. 1.0](manual.md) – Oktober 2026 |
+| Supply | Printed on the base: AC IN 220V 50Hz. 160 W only in the manual and the profile |
+| Units on hand | — |
+| Documentation | [Manual rev. 1.0](manual.md) — October 2026 |
 
-## Kurzbeschreibung
+## Summary
 
-Kompakter LED-Moving-Head mit einem Feld einzelner LED-Optiken, Pan und Tilt. Die ersten neun Kanäle sind in beiden Modi gleich. `16BT` ON hängt Pan-fein und Tilt-fein als CH10 und CH11 an.
+Compact LED moving head with a field of individual LED optics, pan, and tilt. The first nine channels are the same in both modes. In QLC+ the modes are named `9-Ch 16BT OFF` and `11-Ch 16BT ON`. `16BT` ON adds pan fine and tilt fine as CH10 and CH11.
 
-**CH6 ist ein invertierter Dimmer.** DMX 0 ist volle RGB-Helligkeit, 255 ist dunkel. Das QXF bildet das so ab. Ein normaler QLC+-Regler wird erst hell, wenn im Workspace der Modifier `Inverted` auf diesem Kanal liegt. Der Modifier steckt nicht in der `.qxf`.
+**CH6 is an inverted dimmer.** DMX 0 is full RGB brightness, 255 is dark. The QXF records it that way. A normal QLC+ fader only becomes brighter when the workspace modifier `Inverted` is set on this channel. The modifier is not stored in the `.qxf`.
 
-Profil: [`profiles/Involight_LEDMH100.qxf`](profiles/Involight_LEDMH100.qxf) (QLC+ 5.2.1). Das Feld `Manufacturer` ist `dmx-fixture-research` und bezeichnet dieses Projekt. Der Hardware-Hersteller ist INVOLIGHT.
+Profile: [`profiles/Involight_LEDMH100.qxf`](profiles/Involight_LEDMH100.qxf) (QLC+ 5.2.1). The `Manufacturer` field is `dmx-fixture-research` and names this project. The hardware manufacturer is INVOLIGHT.
 
-## Identifikation
+## Identification
 
-### Beschriftungen
+### Markings
 
-- Modell: LEDMH100, aus dem Herstellermanual und dem Profil. Auf den Fotos nicht als Typenschild lesbar
-- Sockel hinten, von links: DMX IN, AC IN 220V 50Hz, POWER SWITCH, DMX OUT
-- Display: 4-stellig an der Sockelvorderseite
-- Seriennummer:
+- Model: LEDMH100, from the manufacturer manual and the profile. Not readable as a rating label in the photos
+- Rear of the base, from the left: DMX IN, AC IN 220V 50Hz, POWER SWITCH, DMX OUT
+- Display: 4 digits on the front of the base
+- Serial number:
 - Firmware:
 
-### Technische Daten
+### Technical data
 
-Lumen im Profil: 528. Farbtemperatur: 0. Die 160 W sind die Herstellerangabe, nicht die Summe aus 36 × 1 W.
+Lumens in the profile: 528. Color temperature: 0. The 160 W figure is the manufacturer’s rating for the whole fixture, not the sum of 36 × 1 W.
 
-| Eigenschaft | Wert | Quelle |
+| Property | Value | Source |
 | --- | --- | --- |
-| Lichtquelle | 36 × 1 W LED, RGB. Foto zeigt ein Feld einzelner Optiken, nicht nachgezählt | Herstellerdoku / Foto |
-| Pan / Tilt | 540° / 230° | Herstellerdoku und QXF, nicht gemessen |
-| Abstrahlwinkel | 23°, fest im Kopf | QXF / Herstellerdoku |
-| Abmessungen (B×H×T) | 220 × 376 × 250 mm | QXF / Herstellerdoku, nicht gemessen |
-| Gewicht | 7 kg | QXF / Herstellerdoku, nicht gemessen |
-| Versorgung | AC IN 220V 50Hz, Netzschalter, Kabel am Sockel | Foto Rückseite |
-| Leistungsaufnahme | 160 W | Herstellerdoku und QXF. Nicht auf dem fotografierten Schild |
-| Umgebungstemperatur | max. 40 °C, nur innen | Herstellerdoku |
-| DMX | 3-polig, IN und OUT beschriftet. Modi 9 und 11 | Foto / Herstellerdoku |
-| Display / Menü | 4-stellige Anzeige. Tasten FUN, UP, DOWN, ENTER | Foto Anzeige / Herstellerdoku für die Tastennamen |
+| Light source | 36 × 1 W LED, RGB. The photo shows a field of individual optics, not counted | Manufacturer documentation / photo |
+| Pan / tilt | 540° / 230° | Manufacturer documentation and QXF, not measured |
+| Beam angle | 23°, fixed in the head | QXF / manufacturer documentation |
+| Dimensions (W×H×D) | 220 × 376 × 250 mm | QXF / manufacturer documentation, not measured |
+| Weight | 7 kg | QXF / manufacturer documentation, not measured |
+| Supply | AC IN 220V 50Hz, power switch, cable at the base | Rear photo |
+| Power consumption | 160 W | Manufacturer documentation and QXF. Not on the photographed label |
+| Ambient temperature | Maximum 40 °C, indoor only | Manufacturer documentation |
+| DMX | 3-pin, IN and OUT labeled. Modes 9 and 11 | Photo / manufacturer documentation |
+| Display / menu | 4-digit display. Buttons FUN, UP, DOWN, ENTER | Display photo / manufacturer documentation for the button names |
 
-### Menü (Kurz)
+### Menu (short)
 
-Ausführlich in [manual.md](manual.md). `M-DM` DMX, `M-AU` Automatik, `M-SO` Sound, `PR1`–`PR8`, `SP01`–`SP15`, `r PAN`, `R TILT`, `r-PT`, `TEST`, `DISP`, `REST`, `16BT` ON/OFF.
+Full map in [manual.md](manual.md). `M-DM` DMX, `M-AU` automatic, `M-SO` sound, `PR1`–`PR8`, `SP01`–`SP15`, `r PAN`, `R TILT`, `r-PT`, `TEST`, `DISP`, `REST`, `16BT` ON/OFF.
 
-`16BT` OFF ist der 9-Kanal-Modus, ON der 11-Kanal-Modus. Der QLC+-Modus muss dazu passen.
+`16BT` OFF is the 9-channel mode, ON is the 11-channel mode. The QLC+ mode has to match.
 
-### Fotos
+### Photos
 
-| Datei | Inhalt |
+| File | Contents |
 | --- | --- |
-| [photos/front-leds.jpg](photos/front-leds.jpg) | LED-Feld, Bügel, Sockel |
-| [photos/base-display.jpg](photos/base-display.jpg) | Seite, 4-stellige Anzeige |
-| [photos/rear-connectors.jpg](photos/rear-connectors.jpg) | DMX IN, AC IN 220V 50Hz, Netzschalter, DMX OUT |
+| [photos/front-leds.jpg](photos/front-leds.jpg) | LED field, yoke, base |
+| [photos/base-display.jpg](photos/base-display.jpg) | Side, 4-digit display |
+| [photos/rear-connectors.jpg](photos/rear-connectors.jpg) | DMX IN, AC IN 220V 50Hz, power switch, DMX OUT |
 
-Noch offen: Typenschild mit Modell und 160 W, Tastenbeschriftung aus der Nähe.
+Still open: a rating label with the model and 160 W, and a close photo of the button labels.
 
-## Dokumentation in diesem Ordner
+## Files in this folder
 
-| Datei | Inhalt |
+| File | Contents |
 | --- | --- |
-| [manual.md](manual.md) | Bedienungsanleitung Rev. 1.0 |
-| [dmx-channels.md](dmx-channels.md) | 9- und 11-Kanal-Belegung |
-| [test-notes.md](test-notes.md) | Quellen und offene Messungen |
-| [profiles/Involight_LEDMH100.qxf](profiles/Involight_LEDMH100.qxf) | QLC+-Fixture |
+| [manual.md](manual.md) | Operating manual rev. 1.0 |
+| [dmx-channels.md](dmx-channels.md) | 9- and 11-channel map |
+| [test-notes.md](test-notes.md) | Sources and open measurements |
+| [profiles/Involight_LEDMH100.qxf](profiles/Involight_LEDMH100.qxf) | QLC+ fixture |
 
-## Offene Fragen
+## Open questions
 
-- [x] Netzanschluss am Gerät gelesen: AC IN 220V 50Hz, Schalter, DMX IN/OUT
-- [ ] Typenschild mit Modell und 160 W
-- [ ] Dimmer-Inversion und Strobe-Richtung am Gerät geprüft
-- [ ] `16BT` gegen die beiden QLC+-Modi gefahren
-- [ ] Pan 540° und Tilt 230° gemessen
-- [x] QLC+-Profil entspricht der installierten Definition
-- [ ] Profil mit dem Gerät gefahren
+- [x] Mains connection read on the unit: AC IN 220V 50Hz, switch, DMX IN/OUT
+- [ ] Rating label with model and 160 W
+- [ ] Dimmer inversion and strobe direction checked on the unit
+- [ ] `16BT` driven against both QLC+ modes
+- [ ] Pan 540° and tilt 230° measured
+- [x] QLC+ profile matches the installed definition
+- [ ] Profile driven live against the fixture

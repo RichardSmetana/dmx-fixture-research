@@ -1,313 +1,313 @@
 # RGBWAUV Wireless PAR 7CH-12CH
 
-## Bedienungsanleitung und DMX-Kanalreferenz
+## Operating manual and DMX channel reference
 
-| Feld | Wert |
+| Field | Value |
 | --- | --- |
-| Fixture-Profil | RGBWAUV Wireless PAR 7CH-12CH |
-| Profil-Hersteller | dmx-fixture-research |
-| Originalhersteller | Unbekannt / Rasha-kompatibler OEM |
+| Fixture profile | RGBWAUV Wireless PAR 7CH-12CH |
+| Profile manufacturer | dmx-fixture-research |
+| Original manufacturer | Unknown / Rasha-compatible OEM |
 | Firmware | V2.20 |
-| Gerätetyp | Color Changer |
-| DMX-Modi | 7CH / 12CH |
-| QLC+-Version | 5.2.2 |
-| Dokumentationsstand | 1.1 – Oktober 2026 |
+| Fixture type | Color changer |
+| DMX modes | 7CH / 12CH |
+| QLC+ version | 5.2.2 |
+| Documentation | 1.1 — October 2026 |
 
-Profil-Datei: [`profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf`](profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf).
+Profile file: [`profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf`](profiles/Generic-OEM-RGBWAUV-Wireless-7-12CH.qxf).
 
-Diese Anleitung beschreibt das Gerät nach der QLC+-Fixture-Definition dieses Projekts. Wo die Rasha-Referenzdokumentation abweicht, gilt die Fixture-Definition. Forschungsstatus der einzelnen Kanäle: [dmx-channels.md](dmx-channels.md).
-
----
-
-## 1. Einleitung
-
-Der RGBWAUV Wireless PAR ist ein kompakter LED-Scheinwerfer für Bühne, Veranstaltung, Architekturlicht und mobilen Einsatz.
-
-Er mischt sechs Farben: Rot, Grün, Blau, Weiß, Amber und Ultraviolett.
-
-Das Gerät unterstützt DMX512 per Kabel, Wireless-DMX, Standalone-Betrieb, Automatikprogramme, Soundsteuerung und Master/Slave.
-
-Bedienfeld und Funktionen ähneln dem Rasha Professional HEX V12 Wireless Flat PAR. Der Hardware-Hersteller ist nicht eindeutig identifiziert.
-
-### Merkmale
-
-- Sieben LED-Optiken
-- RGBWAUV-Farbmischung
-- DMX mit 7 und 12 Kanälen
-- Wireless-DMX-Empfänger mit Stabantenne (2,4 GHz laut Beschreibung)
-- DMX-Ein- und Ausgang, 3-poliger XLR
-- Master-Dimmer im 12CH-Modus
-- Strobe, Puls und Zufalls-Strobe
-- 38 Standalone-Farbpresets
-- Automatische Farbprogramme
-- Sound-Effekte
-- Speicher für eigene Farben
-- LED-Bedienfeld mit vier Tasten
-- Anzeige der Firmware-Version
+This manual follows the QLC+ fixture definition in this project. Where the Rasha reference documentation differs, the fixture definition applies. Per-channel research status: [dmx-channels.md](dmx-channels.md).
 
 ---
 
-## 2. Sicherheit
+## 1. Introduction
 
-### Allgemein
+The RGBWAUV Wireless PAR is a compact LED fixture for stage, events, architectural lighting, and mobile use.
 
-- Nicht direkt in die Lichtquelle blicken.
-- Vor Wartung vom Netz trennen.
-- Nur an einen ordnungsgemäß geerdeten Stromkreis anschließen.
-- Nicht an einen Dimmerpack oder einen Stellwiderstand anschließen.
-- Nicht betreiben, wenn Gehäuse, Steckverbinder, Linsen oder Leitungen beschädigt sind.
-- Lüftungsöffnungen freihalten.
-- Nicht Regen oder starker Feuchtigkeit aussetzen.
-- Linsen nicht in die Sonne richten.
-- Bei längerem Nichtgebrauch vom Netz trennen.
+It mixes six colors: red, green, blue, white, amber, and ultraviolet.
 
-### Montage
+The fixture supports wired DMX512, wireless DMX, standalone operation, automatic programs, sound control, and master/slave.
 
-Die Montage erfolgt über den verstellbaren Bügel.
+The panel and functions resemble the Rasha Professional HEX V12 Wireless Flat PAR. The hardware manufacturer is not identified.
 
-Über Kopf oder über Personenhöhe: geeignete Schelle und ein separates Sicherungsseil.
+### Features
 
-Rund um das Gehäuse genug Abstand zur Kühlung lassen. Das Rasha-Referenzmanual nennt mindestens 50 cm zu benachbarten Flächen.
-
-### Temperatur
-
-Die Rasha-Dokumentation nennt widersprüchlich 45 °C und 50 °C als maximale Umgebungstemperatur.
-
-Solange das Typenschild dieses Geräts das nicht bestätigt, gilt **45 °C** als konservative Obergrenze.
+- Seven LED optics
+- RGBWAUV color mixing
+- 7-channel and 12-channel DMX
+- Wireless DMX receiver with a whip antenna (2.4 GHz according to the description)
+- 3-pin XLR DMX input and output
+- Master dimmer in 12CH mode
+- Strobe, pulse, and random strobe
+- 38 standalone color presets
+- Automatic color programs
+- Sound effects
+- Memory for custom colors
+- Four-button LED panel
+- Firmware version display
 
 ---
 
-## 3. Anschlüsse
+## 2. Safety
 
-### 3.1 Versorgung
+### General
 
-Auf der Rückseite steht **POWER IN AC90-240V**. Eine Netzfrequenz ist dort nicht aufgedruckt. Das Rasha-Referenzmanual nennt zusätzlich 50/60 Hz; das ist am Gerät nicht bestätigt.
+- Do not look directly into the light source.
+- Disconnect mains power before maintenance.
+- Connect only to a properly grounded circuit.
+- Do not connect the fixture to a dimmer pack or a rheostat.
+- Do not operate it if the housing, connectors, lenses, or cables are damaged.
+- Keep ventilation openings clear.
+- Do not expose it to rain or heavy moisture.
+- Do not aim the lenses at the sun.
+- Disconnect it during long periods of non-use.
 
-### 3.2 Anschlussfeld
+### Mounting
 
-Von links nach rechts, siehe [photos/rear-panel.jpg](photos/rear-panel.jpg):
+Mount the fixture with the adjustable yoke.
 
-- 4-stellige Anzeige und die Tasten MENU, DOWN, UP, ENTER
-- DMX OUT, 3-poliger XLR
-- DMX IN, 3-poliger XLR
+Above head height: use a suitable clamp and a separate safety cable.
+
+Leave clearance around the housing for cooling. The Rasha reference manual cites at least 50 cm from adjacent surfaces.
+
+### Temperature
+
+The Rasha documentation cites conflicting maximum ambient temperatures of 45 °C and 50 °C.
+
+Until this fixture’s rating label confirms the limit, use **45 °C** as the conservative maximum.
+
+---
+
+## 3. Connections
+
+### 3.1 Supply
+
+The rear is printed **POWER IN AC90-240V**. Mains frequency is not printed there. The Rasha reference manual also cites 50/60 Hz. That is not confirmed on this unit.
+
+### 3.2 Connector panel
+
+From left to right, see [photos/rear-panel.jpg](photos/rear-panel.jpg):
+
+- 4-digit display and the buttons MENU, DOWN, UP, ENTER
+- DMX OUT, 3-pin XLR
+- DMX IN, 3-pin XLR
 - POWER OUT, IEC
-- POWER IN, IEC, Aufdruck AC90-240V
+- POWER IN, IEC, printed AC90-240V
 
-Die Stabantenne sitzt oberhalb der Buchsen. Eine eigene Wireless-LED ist auf der Rückseite nicht zu sehen.
+The whip antenna sits above the connectors. There is no separate wireless LED on the rear.
 
-### 3.3 Netz
+### 3.3 Mains
 
-- POWER IN, Aufdruck AC90-240V
-- POWER OUT zum Weiterschleifen weiterer Geräte
+- POWER IN, printed AC90-240V
+- POWER OUT for linking more fixtures
 
-Den zulässigen Strom von Steckverbindern und Leitungen nicht überschreiten. Der Sicherungswert ist auf den Fotos nicht lesbar.
+Do not exceed the current rating of the connectors or cables. The fuse rating is not readable in the photos.
 
 ### 3.4 DMX
 
-3-poliger XLR, auf dem Gerät beschriftet:
+3-pin XLR, labeled on the fixture:
 
 - DMX OUT
 - DMX IN
 
-Die Geräte lassen sich in einer DMX-Kette verbinden.
+Fixtures can be daisy-chained.
 
-### 3.5 Wireless-DMX
+### 3.5 Wireless DMX
 
-Eine Stabantenne ist am Gerät vorhanden. Die Angabe 2,4 GHz stammt aus der Gerätebeschreibung und steht nicht auf dem Gehäuse.
+A whip antenna is fitted. The 2.4 GHz figure comes from the fixture description and is not printed on the housing.
 
-1. Gerät einschalten.
-2. DMX-Kanalmodus wählen.
-3. Startadresse setzen.
-4. Den passenden Wireless-DMX-Sender einschalten.
-5. Empfänger auf dieselbe Wireless-Gruppe bzw. dieselbe ID wie der Sender stellen.
-6. Das Display prüfen. Eine separate Empfangs-LED ist nicht vorhanden.
+1. Power the fixture on.
+2. Select the DMX channel mode.
+3. Set the start address.
+4. Power on a compatible wireless DMX transmitter.
+5. Set the receiver to the same wireless group or ID as the transmitter.
+6. Check the display. There is no separate receive LED.
 
-Wireless ersetzt nur das DMX-Kabel. Netzversorgung bleibt nötig.
+Wireless replaces only the DMX cable. Mains power is still required.
 
-Der genaue Pairing-Ablauf hängt vom verbauten Empfängermodul ab.
+The exact pairing steps depend on the installed receiver module.
 
 ---
 
-## 4. Bedienfeld und Menü
+## 4. Control panel and menu
 
-### 4.1 Tasten
+### 4.1 Buttons
 
-Aufdruck von links nach rechts: MENU, DOWN, UP, ENTER. Daneben eine 4-stellige 7-Segment-Anzeige. Siehe [photos/rear-panel.jpg](photos/rear-panel.jpg).
+Printed from left to right: MENU, DOWN, UP, ENTER. Next to them is a 4-digit 7-segment display. See [photos/rear-panel.jpg](photos/rear-panel.jpg).
 
-| Taste | Funktion |
+| Button | Function |
 | --- | --- |
-| MENU | Menü wechseln oder eine Ebene zurück |
-| DOWN | Wert verringern / vorheriger Eintrag |
-| UP | Wert erhöhen / nächster Eintrag |
-| ENTER | Auswählen oder bestätigen |
+| MENU | Change menu or go back one level |
+| DOWN | Decrease a value / previous item |
+| UP | Increase a value / next item |
+| ENTER | Select or confirm |
 
-### 4.2 Menüplan
+### 4.2 Menu map
 
-| Menü | Werte | Beschreibung |
+| Menu | Values | Description |
 | --- | --- | --- |
-| Addr | 001–512 | DMX-Startadresse |
-| Chnd | 7 / 12 | DMX-Kanalmodus |
-| SLnd | Slav / Nast / Sync / CliC | Geräte- und Sync-Modi |
-| Shnd / CoLo | 1–38 | Statische Farbpresets |
-| Shnd / FADE | 1–3 | Farbüberblendungen |
-| Shnd / FLAS | 1–100 | Blitz- / Strobe-Programme |
-| Shnd / Auto | 1–9 | Automatikprogramme |
-| Soun | 1–6 | Sound-Modi |
-| Cust | CC1–CC5 | Eigene Farbpresets |
-| Dinn | 1–3 | Dimmer-Modi |
+| Addr | 001–512 | DMX start address |
+| Chnd | 7 / 12 | DMX channel mode |
+| SLnd | Slav / Nast / Sync / CliC | Fixture and sync modes |
+| Shnd / CoLo | 1–38 | Static color presets |
+| Shnd / FADE | 1–3 | Color fades |
+| Shnd / FLAS | 1–100 | Flash / strobe programs |
+| Shnd / Auto | 1–9 | Automatic programs |
+| Soun | 1–6 | Sound modes |
+| Cust | CC1–CC5 | Custom color presets |
+| Dinn | 1–3 | Dimmer modes |
 | Blnd | On / Off | Blackout |
-| LED | On / Off | Display-Beleuchtung |
-| Disp | Normal / Inverted | Display-Ausrichtung |
-| Test | Start | Selbsttest |
-| Fhrs | Stunden | Betriebsstundenzähler |
+| LED | On / Off | Display backlight |
+| Disp | Normal / Inverted | Display orientation |
+| Test | Start | Self-test |
+| Fhrs | Hours | Operating-hour counter |
 | Ver | Version | Firmware |
-| Rest | Reset | Werkseinstellungen |
+| Rest | Reset | Factory settings |
 
-Sync, CliC, die Dimmerkurven und die einzelnen Sound-Programme können je nach Firmware oder OEM-Variante abweichen und sind einzeln zu prüfen.
+Sync, CliC, the dimmer curves, and the individual sound programs can differ by firmware or OEM variant and need to be checked one by one.
 
-### 4.3 DMX-Adresse
+### 4.3 DMX address
 
-1. `Addr` wählen.
-2. ENTER.
-3. Adresse mit UP und DOWN einstellen.
-4. Mit ENTER bestätigen.
+1. Select `Addr`.
+2. Press ENTER.
+3. Set the address with UP and DOWN.
+4. Confirm with ENTER.
 
-Adresse `001` legt den ersten Gerätekanal auf DMX-Adresse 1.
+Address `001` places the first fixture channel on DMX address 1.
 
-### 4.4 Kanalmodus
+### 4.4 Channel mode
 
-1. `Chnd` wählen.
-2. ENTER.
-3. `7` oder `12` wählen.
-4. Mit ENTER bestätigen.
+1. Select `Chnd`.
+2. Press ENTER.
+3. Select `7` or `12`.
+4. Confirm with ENTER.
 
-Die Farbreihenfolge unterscheidet sich:
+The color order differs:
 
-- **7CH:** CH4 Weiß, CH5 Amber
-- **12CH:** CH4 Amber, CH5 Weiß
+- **7CH:** CH4 white, CH5 amber
+- **12CH:** CH4 amber, CH5 white
 
-Diese Positionen folgen der QLC+-Fixture-Definition. Der 7CH-Modus ist am Gerät verifiziert.
+These positions follow the QLC+ fixture definition. The 7CH mode is verified on the unit.
 
-### 4.5 Gerätemodus (`SLnd`)
+### 4.5 Fixture mode (`SLnd`)
 
-| Einstellung | Funktion |
+| Setting | Function |
 | --- | --- |
 | Slav | Slave |
 | Nast | Master |
-| Sync | Synchronisation |
-| CliC | Weiterer Sync-/Steuermodus |
+| Sync | Synchronization |
+| CliC | Additional sync / control mode |
 
-Die genaue Wirkung von Sync und CliC kann zwischen Firmware- und OEM-Varianten abweichen.
+The exact effect of Sync and CliC can differ between firmware and OEM variants.
 
-### 4.6 Statische Farben
+### 4.6 Static colors
 
-`CoLo` enthält 38 vordefinierte Farben.
+`CoLo` holds 38 predefined colors.
 
-1. `Shnd` öffnen.
-2. `CoLo` wählen.
-3. Farbe 1 bis 38 wählen.
-4. Mit ENTER bestätigen.
+1. Open `Shnd`.
+2. Select `CoLo`.
+3. Choose a color from 1 to 38.
+4. Confirm with ENTER.
 
-Die Farbe steht ohne automatischen Wechsel. Diese 38 Menüfarben sind unabhängig von der DMX-Presettabelle auf CH7 im 12CH-Modus.
+The color holds without an automatic change. These 38 menu colors are independent of the DMX preset table on CH7 in 12CH mode.
 
 ### 4.7 Fade
 
-`FADE` hat drei Programme: FADE 1, FADE 2, FADE 3.
+`FADE` has three programs: FADE 1, FADE 2, and FADE 3.
 
-Das Rasha-Referenzmanual beschreibt sie von schnell nach langsam.
+The Rasha reference manual describes them from fast to slow.
 
 ### 4.8 Flash
 
-`FLAS` reicht von 1 bis 100.
+`FLAS` runs from 1 to 100.
 
-Höhere Werte bedeuten laut Referenzmanual schnellere Blitze.
+Higher values mean faster flashes, according to the reference manual.
 
-### 4.9 Automatik
+### 4.9 Automatic
 
-`Auto` enthält neun Programme, darunter Farbwechsel, Überblendungen und weitere eingebaute Effekte.
+`Auto` contains nine programs, including color changes, fades, and other built-in effects.
 
 ### 4.10 Sound
 
-`Soun` enthält sechs Modi. Das Gerät nutzt das eingebaute Mikrofon.
+`Soun` contains six modes. The fixture uses its built-in microphone.
 
-Jedes Sound-Programm einzeln prüfen.
+Check each sound program individually.
 
-### 4.11 Eigene Farben
+### 4.11 Custom colors
 
-`Cust` speichert fünf Presets: CC1, CC2, CC3, CC4, CC5. Abruf über das Menü.
+`Cust` stores five presets: CC1, CC2, CC3, CC4, and CC5. Recall them from the menu.
 
 ### 4.12 Dimmer
 
-`Dinn` hat drei Einstellungen.
+`Dinn` has three settings.
 
-Die Rasha-Dokumentation beschreibt linear, Square-Law, Inverse-Square-Law und S-Kurve, ordnet diese Kurven den drei Einstellungen aber nicht einheitlich zu. Das Verhalten jeder Stufe ist am Gerät zu prüfen.
+The Rasha documentation describes linear, square-law, inverse-square-law, and S-curve dimming, but it does not assign those curves to the three settings consistently. Test each step on the unit.
 
 ### 4.13 Blackout
 
-`Blnd`: On oder Off. Beeinflusst das Blackout-Verhalten.
+`Blnd`: On or Off. This affects blackout behavior.
 
 ### 4.14 Display
 
-`LED`: Display an lassen oder nach Nichtbenutzung abschalten.
+`LED`: leave the display on, or switch it off after it is idle.
 
-`Disp`: Anzeige normal oder invertiert.
+`Disp`: normal or inverted display.
 
-### 4.15 Selbsttest
+### 4.15 Self-test
 
-`Test` wählen und ENTER.
+Select `Test` and press ENTER.
 
-### 4.16 Betriebsstunden
+### 4.16 Operating hours
 
-`Fhrs` zeigt die aufgelaufene Betriebszeit.
+`Fhrs` shows the accumulated operating time.
 
 ### 4.17 Firmware
 
-`Ver` zeigt die Firmware.
+`Ver` shows the firmware.
 
-**Am dokumentierten Gerät: V2.20**
+**On the documented unit: V2.20**
 
 ### 4.18 Reset
 
-`Rest` und ENTER stellen die Werkseinstellungen wieder her. Gespeicherte Einstellungen können verloren gehen.
+`Rest` and ENTER restore the factory settings. Stored settings can be lost.
 
 ---
 
-## 5. DMX-Kanalbelegung
+## 5. DMX channel map
 
-Modusnamen im QLC+-Profil:
+Mode names in the QLC+ profile:
 
-| Modus | Name in QLC+ | Stand |
+| Mode | Name in QLC+ | Status |
 | --- | --- | --- |
-| 7CH | 7 Channel  - probable Rasha/OEM | Kanalbelegung am Gerät verifiziert. Der Name enthält zwei Leerzeichen vor dem Gedankenstrich. |
-| 12CH | 12 Channel - probable Rasha/OEM | CH9 auf V2.20 geprüft, übrige Kanäle aus der Fixture-Definition |
+| 7CH | 7 Channel  - probable Rasha/OEM | Channel map verified on the unit. The name has two spaces before the dash. |
+| 12CH | 12 Channel - probable Rasha/OEM | CH9 tested on V2.20; other channels from the fixture definition |
 
-### 5.1 Sieben Kanäle (7CH)
+### 5.1 Seven channels (7CH)
 
-| Kanal | Funktion | DMX-Wert |
+| Channel | Function | DMX value |
 | --- | --- | --- |
-| CH1 | Rot | 0–255 |
-| CH2 | Grün | 0–255 |
-| CH3 | Blau | 0–255 |
-| CH4 | Weiß | 0–255 |
+| CH1 | Red | 0–255 |
+| CH2 | Green | 0–255 |
+| CH3 | Blue | 0–255 |
+| CH4 | White | 0–255 |
 | CH5 | Amber | 0–255 |
 | CH6 | UV | 0–255 |
-| CH7 | Strobe / Puls | siehe unten |
+| CH7 | Strobe / pulse | see below |
 
-Die Intensität steigt von 0 (aus) bis 255 (Maximum). Es gibt keinen separaten Master-Dimmer.
+Intensity rises from 0 (off) to 255 (maximum). There is no separate master dimmer.
 
-#### CH7 – Strobe / Puls
+#### CH7 — strobe / pulse
 
-| DMX-Wert | Funktion |
+| DMX value | Function |
 | --- | --- |
-| 0–15 | Offen / statisches Licht |
-| 16–131 | Strobe, langsam bis schnell |
-| 132–189 | Puls / Fade, hell nach dunkel |
-| 190–230 | Puls / Fade, dunkel nach hell |
-| 231–255 | Offen / maximale Helligkeit |
+| 0–15 | Open / static light |
+| 16–131 | Strobe, slow to fast |
+| 132–189 | Pulse / fade, bright to dark |
+| 190–230 | Pulse / fade, dark to bright |
+| 231–255 | Open / maximum brightness |
 
-#### Beispiel: statisches Rot (7CH)
+#### Example: static red (7CH)
 
-| Kanal | Wert |
+| Channel | Value |
 | --- | --- |
 | CH1 | 255 |
 | CH2 | 0 |
@@ -317,106 +317,106 @@ Die Intensität steigt von 0 (aus) bis 255 (Maximum). Es gibt keinen separaten M
 | CH6 | 0 |
 | CH7 | 0 |
 
-CH7 steht in einem Offen-Bereich, damit das Licht dauerhaft an bleibt.
+CH7 is in an open range so the light stays on.
 
-### 5.2 Zwölf Kanäle (12CH)
+### 5.2 Twelve channels (12CH)
 
-| Kanal | Funktion |
+| Channel | Function |
 | --- | --- |
-| CH1 | Rot |
-| CH2 | Grün |
-| CH3 | Blau |
+| CH1 | Red |
+| CH2 | Green |
+| CH3 | Blue |
 | CH4 | Amber |
-| CH5 | Weiß |
+| CH5 | White |
 | CH6 | UV |
-| CH7 | Farbpresets |
-| CH8 | Master-Dimmer |
-| CH9 | Strobe / Puls / Zufalls-Strobe |
-| CH10 | Zufälliger Farbwechsel |
-| CH11 | Auto-Farbwechsel |
-| CH12 | Auto / Sound / Strobe |
+| CH7 | Color presets |
+| CH8 | Master dimmer |
+| CH9 | Strobe / pulse / random strobe |
+| CH10 | Random color change |
+| CH11 | Auto color change |
+| CH12 | Auto / sound / strobe |
 
 #### CH1–CH6
 
-| DMX-Wert | Funktion |
+| DMX value | Function |
 | --- | --- |
-| 0 | Farbe aus |
-| 1–255 | Intensität von Minimum bis Maximum |
+| 0 | Color off |
+| 1–255 | Intensity from minimum to maximum |
 
-Reihenfolge: Rot, Grün, Blau, Amber, Weiß, UV.
+Order: red, green, blue, amber, white, UV.
 
-#### CH7 – Farbpresets
+#### CH7 — color presets
 
-| DMX-Wert | Funktion |
+| DMX value | Function |
 | --- | --- |
-| 0–10 | Keine Funktion |
-| 11–40 | Farbpreset 1 |
-| 41–70 | Farbpreset 2 |
-| 71–100 | Farbpreset 3 |
-| 101–130 | Farbpreset 4 |
-| 131–160 | Farbpreset 5 |
-| 161–190 | Farbpreset 6 |
-| 191–220 | Farbpreset 7 |
-| 221–255 | Farbpreset / Weißabgleich |
+| 0–10 | No function |
+| 11–40 | Color preset 1 |
+| 41–70 | Color preset 2 |
+| 71–100 | Color preset 3 |
+| 101–130 | Color preset 4 |
+| 131–160 | Color preset 5 |
+| 161–190 | Color preset 6 |
+| 191–220 | Color preset 7 |
+| 221–255 | Color preset / white balance |
 
-Die Fixture-Definition verwendet diese acht Bereiche.
+The fixture definition uses these eight ranges.
 
-Das Rasha-Referenzmanual listet 32 DMX-Farbpresets. Diese Tabelle passt nicht zur Fixture-Definition und wird hier nicht verwendet. Die 38 Farben im Menü `CoLo` sind davon unabhängig.
+The Rasha reference manual lists 32 DMX color presets. That table does not match the fixture definition and is not used here. The 38 colors in menu `CoLo` are independent of it.
 
-#### CH8 – Master-Dimmer
+#### CH8 — master dimmer
 
-| DMX-Wert | Funktion |
+| DMX value | Function |
 | --- | --- |
-| 0–255 | Gesamtintensität, 0–100 % |
+| 0–255 | Overall intensity, 0–100% |
 
-#### CH9 – Strobe / Puls / Zufalls-Strobe
+#### CH9 — strobe / pulse / random strobe
 
-Auf Firmware V2.20 geprüft. Die Wertebereiche stammen aus der Messung, die Pulsbeschreibungen aus der Fixture-Datei.
+Tested on firmware V2.20. The value ranges come from the measurement. The pulse descriptions come from the fixture file.
 
-| DMX-Wert | Funktion |
+| DMX value | Function |
 | --- | --- |
 | 0–7 | Blackout |
-| 8–15 | Offen |
-| 16–131 | Strobe, langsam bis schnell |
-| 132–139 | Offen |
-| 140–181 | Puls: langsam zu, schnell auf |
-| 182–189 | Offen |
-| 190–231 | Puls: langsam auf, schnell zu |
-| 232–239 | Offen |
-| 240–247 | Zufalls-Strobe |
-| 248–255 | Offen |
+| 8–15 | Open |
+| 16–131 | Strobe, slow to fast |
+| 132–139 | Open |
+| 140–181 | Pulse: slow close, fast open |
+| 182–189 | Open |
+| 190–231 | Pulse: slow open, fast close |
+| 232–239 | Open |
+| 240–247 | Random strobe |
+| 248–255 | Open |
 
-#### CH10 – Zufälliger Farbwechsel
+#### CH10 — random color change
 
-| DMX-Wert | Funktion |
+| DMX value | Function |
 | --- | --- |
-| 0–10 | Keine Funktion |
-| 11–255 | Zufälliger Farbwechsel, langsam bis schnell |
+| 0–10 | No function |
+| 11–255 | Random color change, slow to fast |
 
-Die Geschwindigkeit steigt mit dem DMX-Wert.
+Speed rises with the DMX value.
 
-#### CH11 – Automatischer Farbwechsel
+#### CH11 — automatic color change
 
-| DMX-Wert | Funktion |
+| DMX value | Function |
 | --- | --- |
-| 0–10 | Keine Funktion |
-| 11–255 | Automatischer Farbwechsel, langsam bis schnell |
+| 0–10 | No function |
+| 11–255 | Automatic color change, slow to fast |
 
-Die Geschwindigkeit steigt mit dem DMX-Wert.
+Speed rises with the DMX value.
 
-#### CH12 – Auto / Sound / Strobe
+#### CH12 — auto / sound / strobe
 
-| DMX-Wert | Funktion |
+| DMX value | Function |
 | --- | --- |
-| 0–10 | Keine Funktion |
-| 11–120 | Auto- / Sound-Programm |
-| 121–255 | Auto- / Sound- / Strobe-Programm |
+| 0–10 | No function |
+| 11–120 | Auto / sound program |
+| 121–255 | Auto / sound / strobe program |
 
-Das genaue Verhalten in diesen Bereichen kann vom gewählten Programm oder Betriebszustand abhängen.
+The exact behavior inside these ranges can depend on the selected program or operating state.
 
-#### Beispiel: statisches Rot (12CH)
+#### Example: static red (12CH)
 
-| Kanal | Wert |
+| Channel | Value |
 | --- | --- |
 | CH1 | 255 |
 | CH2 | 0 |
@@ -431,107 +431,107 @@ Das genaue Verhalten in diesen Bereichen kann vom gewählten Programm oder Betri
 | CH11 | 0 |
 | CH12 | 0 |
 
-CH8 auf voller Helligkeit, CH9 in einem Offen-Bereich (248–255). Die übrigen Effektkanäle sind aus.
+CH8 at full brightness, CH9 in an open range (248–255). The other effect channels are off.
 
 ---
 
-## 6. Technische Daten
+## 6. Technical data
 
-Die Werte unten stehen so im QLC+-Profil. Sie sind Profildaten, keine unabhängig geprüften Labormessungen. Lumen und Farbtemperatur im Profil sind 0 und damit Platzhalter.
+The values below are stored in the QLC+ profile. They are profile data, not independently checked laboratory measurements. Lumens and color temperature in the profile are 0 and are placeholders.
 
-### 6.1 Mechanik und Optik
+### 6.1 Mechanics and optics
 
-| Größe | Wert |
+| Item | Value |
 | --- | --- |
-| Gerätetyp | Color Changer |
-| Lichtquelle | LED |
-| LED-Optiken | 7, Anordnung 2–3–2, Foto Vorderseite |
-| Abmessungen | 220 × 220 × 90 mm |
-| Gewicht im Profil | 1 kg |
-| Linse | Fresnel |
-| Abstrahlwinkel | 25°–40° |
-| Fokus | fest |
-| Pan / Tilt | entfällt |
+| Fixture type | Color changer |
+| Light source | LED |
+| LED optics | 7, 2–3–2 layout, front photo |
+| Dimensions | 220 × 220 × 90 mm |
+| Profile weight | 1 kg |
+| Lens | Fresnel |
+| Beam angle | 25°–40° |
+| Focus | Fixed |
+| Pan / tilt | Not applicable |
 
-### 6.2 Elektrik
+### 6.2 Electrical
 
-| Größe | Wert |
+| Item | Value |
 | --- | --- |
-| Leistungsaufnahme | 90 W (Profilwert) |
-| Netz | AC 90–240 V, Aufdruck am Gerät. Frequenz nicht aufgedruckt |
-| DMX | 3-poliger XLR, DMX IN und DMX OUT |
-| Wireless | Stabantenne am Gerät; 2,4 GHz aus der Gerätebeschreibung |
-| Sicherung | Wert am Gerät nicht lesbar |
-| Netz Ein/Aus | IEC POWER IN und POWER OUT |
+| Power consumption | 90 W (profile value) |
+| Mains | AC 90–240 V, printed on the fixture. Frequency not printed |
+| DMX | 3-pin XLR, DMX IN and DMX OUT |
+| Wireless | Whip antenna on the fixture; 2.4 GHz from the description |
+| Fuse | Rating not readable on the fixture |
+| Mains in/out | IEC POWER IN and POWER OUT |
 
-### 6.3 Steuerung
+### 6.3 Control
 
-| Größe | Wert |
+| Item | Value |
 | --- | --- |
-| Protokoll | DMX512 |
-| Modi | 7CH / 12CH |
-| Standalone | ja |
-| Sound | ja |
-| Master/Slave | ja |
-| Wireless-DMX | ja |
-| Bedienung | 4-stellige Anzeige, Tasten MENU DOWN UP ENTER |
+| Protocol | DMX512 |
+| Modes | 7CH / 12CH |
+| Standalone | Yes |
+| Sound | Yes |
+| Master/slave | Yes |
+| Wireless DMX | Yes |
+| Controls | 4-digit display, buttons MENU DOWN UP ENTER |
 | Firmware | V2.20 |
 
 ---
 
-## 7. Fehlersuche
+## 7. Troubleshooting
 
-| Problem | Mögliche Ursache / Abhilfe |
+| Problem | What to check |
 | --- | --- |
-| Kein Licht | Netz, DMX-Signal, Shutter und Dimmer prüfen |
-| Keine DMX-Reaktion | Adresse und Kanalmodus prüfen |
-| Falsche Farben in 7CH | CH4 ist Weiß, CH5 ist Amber |
-| Falsche Farben in 12CH | CH4 ist Amber, CH5 ist Weiß |
-| Kein Output in 12CH | CH8 über 0, CH9 in einen Offen-Bereich |
-| Unerwartetes Blitzen | 7CH: CH7 prüfen. 12CH: CH9 prüfen |
-| Unerwartete Farbprogramme | 12CH: CH7 und CH10–CH12 prüfen |
-| Wireless verbindet nicht | Senderkompatibilität und Wireless-ID prüfen |
-| Display bleibt nicht an | Menü `LED` prüfen |
-| Sound reagiert nicht | Sound-Modus und Mikrofon prüfen |
-| Unerwartetes Verhalten | Master/Slave und Effektkanäle prüfen |
+| No light | Mains, DMX signal, shutter, and dimmer |
+| No DMX response | Address and channel mode |
+| Wrong colors in 7CH | CH4 is white, CH5 is amber |
+| Wrong colors in 12CH | CH4 is amber, CH5 is white |
+| No output in 12CH | CH8 above 0, CH9 in an open range |
+| Unexpected flashing | 7CH: check CH7. 12CH: check CH9 |
+| Unexpected color programs | 12CH: check CH7 and CH10–CH12 |
+| Wireless does not connect | Transmitter compatibility and wireless ID |
+| Display does not stay on | Menu `LED` |
+| Sound does not respond | Sound mode and microphone |
+| Unexpected behavior | Master/slave and the effect channels |
 
 ---
 
-## 8. Dokumentationshinweise
+## 8. Documentation notes
 
-### 8.1 Quellen
+### 8.1 Sources
 
-1. QLC+-Fixture-Definition RGBWAUV Wireless PAR 7CH-12CH in diesem Projekt.
-2. Beobachtungen an Firmware V2.20.
-3. Referenzdokumentation Rasha Professional HEX V12 Wireless Flat PAR.
-4. Messungen und Betriebstests.
-5. Fotos von Vorderseite und Rückseite in [photos/](photos/).
+1. QLC+ fixture definition RGBWAUV Wireless PAR 7CH-12CH in this project.
+2. Observations on firmware V2.20.
+3. Reference documentation for the Rasha Professional HEX V12 Wireless Flat PAR.
+4. Measurements and operating tests.
+5. Front and rear photos in [photos/](photos/).
 
-### 8.2 Identifikation
+### 8.2 Identification
 
-Der Hardware-Hersteller ist nicht abschließend bestimmt. Das Gerät ähnelt der Rasha-HEX-Serie und hat ein vergleichbares Menü.
+The hardware manufacturer is not finally identified. The fixture resembles the Rasha HEX series and has a similar menu.
 
-Das Feld `Manufacturer` im QLC+-Profil ist `dmx-fixture-research`. Das bezeichnet das Projekt, das das Profil pflegt, und ist kein Nachweis des Hardware-Herstellers.
+The `Manufacturer` field in the QLC+ profile is `dmx-fixture-research`. That names the project maintaining the profile. It is not evidence of the hardware manufacturer.
 
-### 8.3 Profil
+### 8.3 Profile
 
 - QLC+ 5.2.2
-- Modell: RGBWAUV Wireless PAR 7CH-12CH
+- Model: RGBWAUV Wireless PAR 7CH-12CH
 - Manufacturer: dmx-fixture-research
-- Modi: `7 Channel  - probable Rasha/OEM`, `12 Channel - probable Rasha/OEM`
+- Modes: `7 Channel  - probable Rasha/OEM`, `12 Channel - probable Rasha/OEM`
 
-Kanalbelegung, Werte und Effektbeschreibungen folgen dieser Definition. Änderungen am Profil sind in dieser Anleitung nachzuziehen.
+Channel order, values, and effect descriptions follow this definition. Later profile changes must be copied into this manual.
 
-### 8.4 Was geprüft ist
+### 8.4 What has been checked
 
-- **7CH:** Kanalbelegung am Gerät verifiziert.
-- **12CH, CH9:** Strobe-Bereiche auf Firmware V2.20 geprüft.
-- Farbpresets, Automatik und die übrigen 12CH-Kanäle stehen aus der Fixture-Definition. Detailliertere Messungen stehen noch aus.
-- Abmessungen, Gewicht, Leistungsaufnahme, Linsentyp und Abstrahlwinkel stammen aus dem Profil und sind nicht unabhängig geprüft.
-- Am Gehäuse sichtbar: sieben Optiken, Bügel, DMX OUT/IN, POWER IN AC90-240V, POWER OUT, Stabantenne, Tasten MENU DOWN UP ENTER, Zeichen CE, WEEE und RoHS. Herstellername, Modell und Netzfrequenz stehen auf den Fotos nicht. Eine eigene Wireless-LED fehlt.
-- Der Menüplan ist beschrieben und noch nicht Punkt für Punkt am Display protokolliert.
-- Die DMX-Bereiche in beiden Modi decken jeweils 0–255 ohne Lücke ab. Das entspricht der QXF-Datei.
+- **7CH:** channel map verified on the unit.
+- **12CH, CH9:** strobe ranges tested on firmware V2.20.
+- Color presets, automatic effects, and the other 12CH channels come from the fixture definition. More detailed measurements are still open.
+- Dimensions, weight, power consumption, lens type, and beam angle come from the profile and were not independently checked.
+- Visible on the housing: seven optics, yoke, DMX OUT/IN, POWER IN AC90-240V, POWER OUT, whip antenna, buttons MENU DOWN UP ENTER, marks CE, WEEE, and RoHS. Manufacturer, model, and mains frequency are not in the photos. There is no separate wireless LED.
+- The menu map is described and has not been walked item by item on the display.
+- The DMX ranges in both modes cover 0–255 with no gap. That matches the QXF file.
 
 ---
 
-*Ende der Anleitung – Revision 1.1*
+*End of manual — revision 1.1*
